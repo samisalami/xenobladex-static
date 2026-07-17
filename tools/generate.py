@@ -95,8 +95,18 @@ def b(v):   # boolean; None stays None (JMS omits nulls)
 def i(v):   # int; None stays None
     return int(v) if v is not None else None
 
+def fix_content(t):
+    # Rewrite external URLs embedded in rich-text/content fields to local/relative ones:
+    #  - image host uploads.xenobladex.org -> local uploads/ (files copied from _uploads)
+    #  - internal links to (www.)xenobladex.org -> relative (so they route within the SPA)
+    if not isinstance(t, str) or 'xenobladex.org' not in t:
+        return t
+    t = re.sub(r'https?://uploads\.xenobladex\.org/', 'uploads/', t)
+    t = re.sub(r'https?://(?:www\.)?xenobladex\.org/?', '', t)
+    return t
+
 def s(v):   # string; None stays None
-    return v if v is not None else None
+    return fix_content(v) if v is not None else None
 
 def strip(d):  # JMS serialize_null=false -> drop null-valued keys
     return {k: v for k, v in d.items() if v is not None}
