@@ -1,0 +1,6 @@
+# Node tooling used only for local render-testing (Puppeteer + headless Chromium)
+tools/node_modules/
+tools/package-lock.json
+tools/shots/
+# scratch
+*.log

@@ -1,0 +1,1290 @@
+{
+ "Attachment": {
+  "table": "xenobladex_attachment",
+  "props": [
+   {
+    "prop": "id",
+    "json": "id",
+    "col": "id",
+    "type": "integer"
+   },
+   {
+    "prop": "name",
+    "json": "name",
+    "col": "name",
+    "type": "string"
+   },
+   {
+    "prop": "file_name",
+    "json": "file_name",
+    "col": "file_name",
+    "type": "string"
+   },
+   {
+    "prop": "uuid",
+    "json": "uuid",
+    "col": "uuid",
+    "type": "string"
+   },
+   {
+    "prop": "description",
+    "json": "description",
+    "col": "description",
+    "type": "text"
+   },
+   {
+    "prop": "mime_type",
+    "json": "mime_type",
+    "col": "mime_type",
+    "type": "text"
+   }
+  ],
+  "virtuals": []
+ },
+ "Collectible": {
+  "table": "xenobladex_collectible",
+  "props": [
+   {
+    "prop": "id",
+    "json": "id",
+    "col": "id",
+    "type": "integer"
+   },
+   {
+    "prop": "name",
+    "json": "name",
+    "col": "name",
+    "type": "string"
+   },
+   {
+    "prop": "description",
+    "json": "description",
+    "col": "description",
+    "type": "text"
+   },
+   {
+    "prop": "rarity",
+    "json": "rarity",
+    "col": "rarity",
+    "type": "text"
+   },
+   {
+    "prop": "locationNote",
+    "json": "location_note",
+    "col": "location_note",
+    "type": "text"
+   },
+   {
+    "prop": "isLuckyField",
+    "json": "is_lucky_field",
+    "col": "is_lucky_field",
+    "type": "boolean"
+   }
+  ],
+  "virtuals": []
+ },
+ "Collection": {
+  "table": "xenobladex_collection",
+  "props": [
+   {
+    "prop": "id",
+    "json": "id",
+    "col": "id",
+    "type": "integer"
+   },
+   {
+    "prop": "region",
+    "json": "region",
+    "col": "region",
+    "type": "string"
+   },
+   {
+    "prop": "rewardSp",
+    "json": "reward_sp",
+    "col": "reward_sp",
+    "type": "smallint"
+   },
+   {
+    "prop": "rewardItem",
+    "json": "reward_item",
+    "col": "reward_item",
+    "type": "string"
+   }
+  ],
+  "virtuals": []
+ },
+ "CollectionCategory": {
+  "table": "xenobladex_collection_category",
+  "props": [
+   {
+    "prop": "id",
+    "json": "id",
+    "col": "id",
+    "type": "integer"
+   },
+   {
+    "prop": "name",
+    "json": "name",
+    "col": "name",
+    "type": "string"
+   },
+   {
+    "prop": "prio",
+    "json": "prio",
+    "col": "prio",
+    "type": "smallint"
+   }
+  ],
+  "virtuals": []
+ },
+ "CollectionGroup": {
+  "table": "xenobladex_collection_group",
+  "props": [
+   {
+    "prop": "id",
+    "json": "id",
+    "col": "id",
+    "type": "integer"
+   },
+   {
+    "prop": "rewardSp",
+    "json": "reward_sp",
+    "col": "reward_sp",
+    "type": "smallint"
+   },
+   {
+    "prop": "rewardItem",
+    "json": "reward_item",
+    "col": "reward_item",
+    "type": "string"
+   },
+   {
+    "prop": "collection",
+    "json": "collection",
+    "relation": "m2o",
+    "target": "Collection",
+    "related_id_only": true,
+    "joincols": [
+     [
+      "collection_id",
+      "id"
+     ]
+    ],
+    "fkcol": "collection_id"
+   },
+   {
+    "prop": "collectionCategory",
+    "json": "collection_category",
+    "relation": "m2o",
+    "target": "CollectionCategory",
+    "related_id_only": true,
+    "joincols": [
+     [
+      "collection_category_id",
+      "id"
+     ]
+    ],
+    "fkcol": "collection_category_id"
+   },
+   {
+    "prop": "collectible1",
+    "json": "collectible1"
+   },
+   {
+    "prop": "collectible2",
+    "json": "collectible2"
+   },
+   {
+    "prop": "collectible3",
+    "json": "collectible3"
+   },
+   {
+    "prop": "collectible4",
+    "json": "collectible4"
+   },
+   {
+    "prop": "collectible5",
+    "json": "collectible5"
+   },
+   {
+    "prop": "collectible6",
+    "json": "collectible6"
+   },
+   {
+    "prop": "collectible7",
+    "json": "collectible7"
+   },
+   {
+    "prop": "collectible8",
+    "json": "collectible8"
+   }
+  ],
+  "virtuals": [
+   {
+    "json": "collection_category_prio",
+    "fn": "getCategoryPrio",
+    "body": "if(!$this->getCollectionCategory()) { return null; } return $this->getCollectionCategory()->getPrio();"
+   },
+   {
+    "json": "collection_category_name",
+    "fn": "getCategoryName",
+    "body": "if(!$this->getCollectionCategory()) { return null; } return $this->getCollectionCategory()->getName();"
+   }
+  ]
+ },
+ "EquipUpgrade": {
+  "table": "xenobladex_equip_upgrade",
+  "props": [
+   {
+    "prop": "id",
+    "json": "id",
+    "col": "id",
+    "type": "integer"
+   },
+   {
+    "prop": "name",
+    "json": "name",
+    "col": "name",
+    "type": "string"
+   },
+   {
+    "prop": "alternativeName",
+    "json": "alternative_name",
+    "col": "alternative_name",
+    "type": "string"
+   },
+   {
+    "prop": "description",
+    "json": "description",
+    "col": "description",
+    "type": "text"
+   },
+   {
+    "prop": "isNotManufacturable",
+    "json": "is_not_manufacturable",
+    "col": "is_not_manufacturable",
+    "type": "boolean"
+   },
+   {
+    "prop": "hasNoTiers",
+    "json": "has_no_tiers",
+    "col": "has_no_tiers",
+    "type": "boolean"
+   },
+   {
+    "prop": "category",
+    "json": "category",
+    "relation": "m2o",
+    "target": "EquipUpgradeCategory",
+    "related_id_only": true,
+    "joincols": [
+     [
+      "equip_upgrade_category_id",
+      "id"
+     ]
+    ],
+    "fkcol": "equip_upgrade_category_id"
+   },
+   {
+    "prop": "material_small1",
+    "json": "material_small1",
+    "relation": "m2o",
+    "target": "Material",
+    "related_id_only": true,
+    "joincols": [
+     [
+      "material_small1_id",
+      "id"
+     ]
+    ],
+    "fkcol": "material_small1_id"
+   },
+   {
+    "prop": "material_small2",
+    "json": "material_small2",
+    "relation": "m2o",
+    "target": "Material",
+    "related_id_only": true,
+    "joincols": [
+     [
+      "material_small2_id",
+      "id"
+     ]
+    ],
+    "fkcol": "material_small2_id"
+   },
+   {
+    "prop": "material_small3",
+    "json": "material_small3",
+    "relation": "m2o",
+    "target": "Material",
+    "related_id_only": true,
+    "joincols": [
+     [
+      "material_small3_id",
+      "id"
+     ]
+    ],
+    "fkcol": "material_small3_id"
+   },
+   {
+    "prop": "material_large1",
+    "json": "material_large1",
+    "relation": "m2o",
+    "target": "Material",
+    "related_id_only": true,
+    "joincols": [
+     [
+      "material_large1_id",
+      "id"
+     ]
+    ],
+    "fkcol": "material_large1_id"
+   },
+   {
+    "prop": "material_large2",
+    "json": "material_large2",
+    "relation": "m2o",
+    "target": "Material",
+    "related_id_only": true,
+    "joincols": [
+     [
+      "material_large2_id",
+      "id"
+     ]
+    ],
+    "fkcol": "material_large2_id"
+   },
+   {
+    "prop": "material_large3",
+    "json": "material_large3",
+    "relation": "m2o",
+    "target": "Material",
+    "related_id_only": true,
+    "joincols": [
+     [
+      "material_large3_id",
+      "id"
+     ]
+    ],
+    "fkcol": "material_large3_id"
+   },
+   {
+    "prop": "equipUpgradeTiers",
+    "json": "equip_upgrade_tiers"
+   }
+  ],
+  "virtuals": [
+   {
+    "json": "category_name",
+    "fn": "getCategoryName",
+    "body": "if(!$this->getCategory()) { return null; } return $this->getCategory()->getName();"
+   },
+   {
+    "json": "category_type",
+    "fn": "getCategoryType",
+    "body": "if(!$this->getCategory()) { return null; } return $this->getCategory()->getType();"
+   }
+  ]
+ },
+ "EquipUpgradeCategory": {
+  "table": "xenobladex_equip_upgrade_category",
+  "props": [
+   {
+    "prop": "id",
+    "json": "id",
+    "col": "id",
+    "type": "integer"
+   },
+   {
+    "prop": "name",
+    "json": "name",
+    "col": "name",
+    "type": "string"
+   },
+   {
+    "prop": "description",
+    "json": "description",
+    "col": "description",
+    "type": "text"
+   },
+   {
+    "prop": "type",
+    "json": "type",
+    "col": "type",
+    "type": "string"
+   }
+  ],
+  "virtuals": []
+ },
+ "EquipUpgradeTier": {
+  "table": "xenobladex_equipupgrade_tier",
+  "props": [
+   {
+    "prop": "id",
+    "json": "id",
+    "col": "id",
+    "type": "integer"
+   },
+   {
+    "prop": "name",
+    "json": "name",
+    "col": "name",
+    "type": "string"
+   },
+   {
+    "prop": "description",
+    "json": "description",
+    "col": "description",
+    "type": "text"
+   },
+   {
+    "prop": "creditCost",
+    "json": "credit_cost",
+    "col": "credit_cost",
+    "type": "integer"
+   },
+   {
+    "prop": "resource",
+    "json": "resource",
+    "relation": "m2o",
+    "target": "Resource",
+    "related_id_only": true,
+    "joincols": [
+     [
+      "resource_id",
+      "id"
+     ]
+    ],
+    "fkcol": "resource_id"
+   },
+   {
+    "prop": "resourceCount",
+    "json": "resource_count",
+    "col": "resource_count",
+    "type": "integer"
+   },
+   {
+    "prop": "materialCount",
+    "json": "material_count",
+    "col": "material_count",
+    "type": "integer"
+   },
+   {
+    "prop": "materialIndividual",
+    "json": "material_individual",
+    "col": "material_individual",
+    "type": "boolean"
+   },
+   {
+    "prop": "material1",
+    "json": "material1",
+    "relation": "m2o",
+    "target": "Material",
+    "related_id_only": true,
+    "joincols": [
+     [
+      "material1_id",
+      "id"
+     ]
+    ],
+    "fkcol": "material1_id"
+   },
+   {
+    "prop": "material2",
+    "json": "material2",
+    "relation": "m2o",
+    "target": "Material",
+    "related_id_only": true,
+    "joincols": [
+     [
+      "material2_id",
+      "id"
+     ]
+    ],
+    "fkcol": "material2_id"
+   },
+   {
+    "prop": "material3",
+    "json": "material3",
+    "relation": "m2o",
+    "target": "Material",
+    "related_id_only": true,
+    "joincols": [
+     [
+      "material3_id",
+      "id"
+     ]
+    ],
+    "fkcol": "material3_id"
+   },
+   {
+    "prop": "materialCountIndividual",
+    "json": "material_count_individual",
+    "col": "material_count_individual",
+    "type": "boolean"
+   },
+   {
+    "prop": "material1Count",
+    "json": "material1_count",
+    "col": "material1_count",
+    "type": "integer"
+   },
+   {
+    "prop": "material2Count",
+    "json": "material2_count",
+    "col": "material2_count",
+    "type": "integer"
+   },
+   {
+    "prop": "material3Count",
+    "json": "material3_count",
+    "col": "material3_count",
+    "type": "integer"
+   },
+   {
+    "prop": "equipUpgrade",
+    "json": "equip_upgrade",
+    "relation": "m2o",
+    "target": "EquipUpgrade",
+    "related_id_only": true,
+    "joincols": [
+     [
+      "equipupgrade_id",
+      "id"
+     ]
+    ],
+    "fkcol": "equipupgrade_id"
+   }
+  ],
+  "virtuals": []
+ },
+ "Faq": {
+  "table": "xenobladex_faq",
+  "props": [
+   {
+    "prop": "id",
+    "json": "id",
+    "col": "id",
+    "type": "integer"
+   },
+   {
+    "prop": "name",
+    "json": "name",
+    "col": "name",
+    "type": "text"
+   },
+   {
+    "prop": "answer",
+    "json": "answer",
+    "col": "answer",
+    "type": "text"
+   },
+   {
+    "prop": "answer_read_more",
+    "json": "answer_read_more",
+    "col": "answer_read_more",
+    "type": "text"
+   },
+   {
+    "prop": "category",
+    "json": "category",
+    "col": "category",
+    "type": "text"
+   }
+  ],
+  "virtuals": []
+ },
+ "Guide": {
+  "table": "xenobladex_guide",
+  "props": [
+   {
+    "prop": "id",
+    "json": "id",
+    "col": "id",
+    "type": "integer"
+   },
+   {
+    "prop": "name",
+    "json": "name",
+    "col": "name",
+    "type": "string"
+   },
+   {
+    "prop": "author",
+    "json": "author",
+    "col": "author",
+    "type": "string"
+   },
+   {
+    "prop": "lastEdited",
+    "json": "last_edited",
+    "col": "last_edited",
+    "type": "datetime"
+   },
+   {
+    "prop": "created",
+    "json": "created",
+    "col": "created",
+    "type": "datetime"
+   },
+   {
+    "prop": "copy",
+    "json": "copy",
+    "col": "copy",
+    "type": "text"
+   }
+  ],
+  "virtuals": []
+ },
+ "Item": {
+  "table": "xenobladex_item",
+  "props": [
+   {
+    "prop": "id",
+    "json": "id",
+    "col": "id",
+    "type": "integer"
+   },
+   {
+    "prop": "name",
+    "json": "name",
+    "col": "name",
+    "type": "string"
+   },
+   {
+    "prop": "rarity",
+    "json": "rarity",
+    "col": "rarity",
+    "type": "string"
+   },
+   {
+    "prop": "creditCost",
+    "json": "credit_cost",
+    "col": "credit_cost",
+    "type": "integer"
+   },
+   {
+    "prop": "ticketCost",
+    "json": "ticket_cost",
+    "col": "ticket_cost",
+    "type": "smallint"
+   },
+   {
+    "prop": "bodyPart",
+    "json": "body_part",
+    "col": "body_part",
+    "type": "string"
+   },
+   {
+    "prop": "description",
+    "json": "description",
+    "col": "description",
+    "type": "text"
+   }
+  ],
+  "virtuals": []
+ },
+ "Map": {
+  "table": "xenobladex_map",
+  "props": [
+   {
+    "prop": "id",
+    "json": "id",
+    "col": "id",
+    "type": "integer"
+   },
+   {
+    "prop": "name",
+    "json": "name",
+    "col": "name",
+    "type": "string"
+   },
+   {
+    "prop": "description",
+    "json": "description",
+    "col": "description",
+    "type": "text"
+   },
+   {
+    "prop": "gridOffsetX",
+    "json": "grid_offset_x",
+    "col": "grid_offset_x",
+    "type": "smallint"
+   },
+   {
+    "prop": "gridOffsetY",
+    "json": "grid_offset_y",
+    "col": "grid_offset_y",
+    "type": "smallint"
+   },
+   {
+    "prop": "gridWidth",
+    "json": "grid_width",
+    "col": "grid_width",
+    "type": "smallint"
+   },
+   {
+    "prop": "gridHeight",
+    "json": "grid_height",
+    "col": "grid_height",
+    "type": "smallint"
+   },
+   {
+    "prop": "gridTileDiameter",
+    "json": "grid_tile_diameter",
+    "col": "grid_tile_diameter",
+    "type": "smallint"
+   },
+   {
+    "prop": "gridTileMargin",
+    "json": "grid_tile_margin",
+    "col": "grid_tile_margin",
+    "type": "smallint"
+   },
+   {
+    "prop": "attachment",
+    "json": "attachment",
+    "relation": "m2o",
+    "target": "Attachment",
+    "related_id_only": false,
+    "joincols": [
+     [
+      "attachment_id",
+      "id"
+     ]
+    ],
+    "fkcol": "attachment_id"
+   }
+  ],
+  "virtuals": []
+ },
+ "Material": {
+  "table": "xenobladex_item_material",
+  "props": [
+   {
+    "prop": "isNotBuyable",
+    "json": "is_not_buyable",
+    "col": "is_not_buyable",
+    "type": "boolean"
+   },
+   {
+    "prop": "showMonsters",
+    "json": "show_monsters",
+    "col": "show_monsters",
+    "type": "boolean"
+   },
+   {
+    "prop": "monster_types",
+    "json": "monster_types",
+    "relation": "m2m",
+    "target": "MonsterType",
+    "related_id_only": true
+   },
+   {
+    "prop": "monsters",
+    "json": "monsters",
+    "relation": "m2m",
+    "target": "Monster",
+    "related_id_only": true
+   }
+  ],
+  "virtuals": []
+ },
+ "Mission": {
+  "table": "xenobladex_mission",
+  "props": [
+   {
+    "prop": "id",
+    "json": "id",
+    "col": "id",
+    "type": "integer"
+   },
+   {
+    "prop": "name",
+    "json": "name",
+    "col": "name",
+    "type": "string",
+    "nullable": true
+   },
+   {
+    "prop": "description",
+    "json": "description",
+    "col": "description",
+    "type": "text",
+    "nullable": true
+   },
+   {
+    "prop": "location_note",
+    "json": "location_note",
+    "col": "locationNote",
+    "type": "text",
+    "nullable": true
+   },
+   {
+    "prop": "conditions",
+    "json": "conditions",
+    "col": "conditions",
+    "type": "text",
+    "nullable": true
+   },
+   {
+    "prop": "tasks",
+    "json": "tasks",
+    "col": "tasks",
+    "type": "text",
+    "nullable": true
+   },
+   {
+    "prop": "solution",
+    "json": "solution",
+    "col": "solution",
+    "type": "text",
+    "nullable": true
+   },
+   {
+    "prop": "rewards",
+    "json": "rewards",
+    "col": "rewards",
+    "type": "text",
+    "nullable": true
+   },
+   {
+    "prop": "mission_type",
+    "json": "mission_type",
+    "relation": "m2o",
+    "target": "MissionType",
+    "related_id_only": false,
+    "joincols": [
+     [
+      "mission_type_id",
+      "id"
+     ]
+    ],
+    "fkcol": "mission_type_id"
+   },
+   {
+    "prop": "person",
+    "json": "person",
+    "relation": "m2o",
+    "target": "Person",
+    "related_id_only": true,
+    "joincols": [
+     [
+      "person_id",
+      "id"
+     ]
+    ],
+    "fkcol": "person_id"
+   },
+   {
+    "prop": "person_unrelated",
+    "json": "person_unrelated",
+    "col": "person_unrelated",
+    "type": "string",
+    "nullable": true
+   },
+   {
+    "prop": "has_person",
+    "json": "has_person",
+    "col": "has_person",
+    "type": "boolean"
+   },
+   {
+    "prop": "target_area",
+    "json": "target_area",
+    "col": "target_area",
+    "type": "string",
+    "nullable": true
+   },
+   {
+    "prop": "sidejob_type",
+    "json": "sidejob_type",
+    "col": "sidejob_type",
+    "type": "string",
+    "nullable": true
+   },
+   {
+    "prop": "difficulty",
+    "json": "difficulty",
+    "col": "difficulty",
+    "type": "smallint"
+   },
+   {
+    "prop": "blade_level",
+    "json": "blade_level",
+    "col": "blade_level",
+    "type": "smallint"
+   },
+   {
+    "prop": "chapter",
+    "json": "chapter",
+    "col": "chapter",
+    "type": "smallint"
+   },
+   {
+    "prop": "mapGeoJson",
+    "json": "map_geo_json",
+    "col": "map_geo_json",
+    "type": "text"
+   }
+  ],
+  "virtuals": [
+   {
+    "json": "mission_type_name",
+    "fn": "getMissionTypeName",
+    "body": "if(!$this->getMissionType()) { return null; } return $this->getMissionType()->getName();"
+   }
+  ]
+ },
+ "MissionType": {
+  "table": "xenobladex_mission_type",
+  "props": [
+   {
+    "prop": "id",
+    "json": "id",
+    "col": "id",
+    "type": "integer"
+   },
+   {
+    "prop": "name",
+    "json": "name",
+    "col": "name",
+    "type": "string"
+   }
+  ],
+  "virtuals": []
+ },
+ "Monster": {
+  "table": "xenobladex_monster",
+  "props": [
+   {
+    "prop": "id",
+    "json": "id",
+    "col": "id",
+    "type": "integer"
+   },
+   {
+    "prop": "name",
+    "json": "name",
+    "col": "name",
+    "type": "string"
+   },
+   {
+    "prop": "levelMin",
+    "json": "level_min",
+    "col": "level_min",
+    "type": "smallint"
+   },
+   {
+    "prop": "levelMax",
+    "json": "level_max",
+    "col": "level_max",
+    "type": "smallint"
+   },
+   {
+    "prop": "time",
+    "json": "time",
+    "col": "time",
+    "type": "string"
+   },
+   {
+    "prop": "weather",
+    "json": "weather",
+    "col": "weather",
+    "type": "string"
+   },
+   {
+    "prop": "isUnique",
+    "json": "is_unique",
+    "col": "is_unique",
+    "type": "boolean"
+   },
+   {
+    "prop": "isStory",
+    "json": "is_story",
+    "col": "is_story",
+    "type": "boolean"
+   },
+   {
+    "prop": "ep",
+    "json": "ep",
+    "col": "ep",
+    "type": "string"
+   },
+   {
+    "prop": "hp",
+    "json": "hp",
+    "col": "hp",
+    "type": "string"
+   },
+   {
+    "prop": "resPhysic",
+    "json": "res_physic",
+    "col": "res_physic",
+    "type": "smallint"
+   },
+   {
+    "prop": "resLaser",
+    "json": "res_laser",
+    "col": "res_laser",
+    "type": "smallint"
+   },
+   {
+    "prop": "resEther",
+    "json": "res_ether",
+    "col": "res_ether",
+    "type": "smallint"
+   },
+   {
+    "prop": "resThermo",
+    "json": "res_thermo",
+    "col": "res_thermo",
+    "type": "smallint"
+   },
+   {
+    "prop": "resElectric",
+    "json": "res_electric",
+    "col": "res_electric",
+    "type": "smallint"
+   },
+   {
+    "prop": "resGravit",
+    "json": "res_gravit",
+    "col": "res_gravit",
+    "type": "smallint"
+   },
+   {
+    "prop": "aggressionDay",
+    "json": "aggression_day",
+    "col": "aggression_day",
+    "type": "string"
+   },
+   {
+    "prop": "agressionNight",
+    "json": "agression_night",
+    "col": "agression_night",
+    "type": "string"
+   },
+   {
+    "prop": "agressionSkellDay",
+    "json": "agression_skell_day",
+    "col": "agression_skell_day",
+    "type": "string"
+   },
+   {
+    "prop": "agressionSkellNight",
+    "json": "agression_skell_night",
+    "col": "agression_skell_night",
+    "type": "string"
+   },
+   {
+    "prop": "description",
+    "json": "description",
+    "col": "description",
+    "type": "text"
+   },
+   {
+    "prop": "locationNote",
+    "json": "location_note",
+    "col": "location_note",
+    "type": "text"
+   },
+   {
+    "prop": "region",
+    "json": "region",
+    "col": "region",
+    "type": "string"
+   },
+   {
+    "prop": "mapGeoJson",
+    "json": "map_geo_json",
+    "col": "map_geo_json",
+    "type": "text"
+   },
+   {
+    "prop": "monsterType",
+    "json": "monster_type",
+    "relation": "m2o",
+    "target": "MonsterType",
+    "related_id_only": true,
+    "joincols": [
+     [
+      "monster_type_id",
+      "id"
+     ]
+    ],
+    "fkcol": "monster_type_id"
+   },
+   {
+    "prop": "materials",
+    "json": "materials",
+    "relation": "m2m",
+    "target": "Material",
+    "related_id_only": true,
+    "jointable": "xenobladex_monster_material",
+    "joincols": [
+     [
+      "monster_id",
+      "id"
+     ],
+     [
+      "material_id",
+      "id"
+     ]
+    ]
+   }
+  ],
+  "virtuals": [
+   {
+    "json": "monster_type_prio",
+    "fn": "getMonsterTypePrio",
+    "body": "if(!$this->getMonsterType()) { return null; } return $this->getMonsterType()->getPrio();"
+   }
+  ]
+ },
+ "MonsterType": {
+  "table": "xenobladex_monster_type",
+  "props": [
+   {
+    "prop": "id",
+    "json": "id",
+    "col": "id",
+    "type": "integer"
+   },
+   {
+    "prop": "name",
+    "json": "name",
+    "col": "name",
+    "type": "string"
+   },
+   {
+    "prop": "description",
+    "json": "description",
+    "col": "description",
+    "type": "text"
+   },
+   {
+    "prop": "prio",
+    "json": "prio",
+    "col": "prio",
+    "type": "smallint"
+   },
+   {
+    "prop": "materials",
+    "json": "materials",
+    "relation": "m2m",
+    "target": "Material",
+    "related_id_only": true,
+    "jointable": "xenobladex_monster_type_material",
+    "joincols": [
+     [
+      "monster_type_id",
+      "id"
+     ],
+     [
+      "material_id",
+      "id"
+     ]
+    ]
+   }
+  ],
+  "virtuals": []
+ },
+ "Person": {
+  "table": "xenobladex_person",
+  "props": [
+   {
+    "prop": "id",
+    "json": "id",
+    "col": "id",
+    "type": "integer"
+   },
+   {
+    "prop": "name",
+    "json": "name",
+    "col": "name",
+    "type": "string"
+   },
+   {
+    "prop": "age",
+    "json": "age",
+    "col": "age",
+    "type": "string"
+   },
+   {
+    "prop": "description",
+    "json": "description",
+    "col": "description",
+    "type": "text"
+   },
+   {
+    "prop": "locationNote",
+    "json": "location_note",
+    "col": "location_note",
+    "type": "text"
+   },
+   {
+    "prop": "region",
+    "json": "region",
+    "col": "region",
+    "type": "string"
+   },
+   {
+    "prop": "species",
+    "json": "species",
+    "col": "species",
+    "type": "string"
+   },
+   {
+    "prop": "job",
+    "json": "job",
+    "col": "job",
+    "type": "string"
+   },
+   {
+    "prop": "conditions",
+    "json": "conditions",
+    "col": "conditions",
+    "type": "text"
+   },
+   {
+    "prop": "activityTime",
+    "json": "activity_time",
+    "col": "activity_time",
+    "type": "string"
+   }
+  ],
+  "virtuals": []
+ },
+ "Resource": {
+  "table": "xenobladex_item_resource",
+  "props": [
+   {
+    "prop": "region",
+    "json": "region",
+    "col": "region",
+    "type": "string"
+   },
+   {
+    "prop": "locationNote",
+    "json": "location_note",
+    "col": "location_note",
+    "type": "text"
+   }
+  ],
+  "virtuals": []
+ },
+ "User": {
+  "table": "xenobladex_user",
+  "props": [
+   {
+    "prop": "id",
+    "json": "id",
+    "col": "id",
+    "type": "integer"
+   }
+  ],
+  "virtuals": []
+ }
+}

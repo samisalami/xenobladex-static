@@ -1,0 +1,227 @@
+{
+ "xenobladex_attachment": [
+  "id",
+  "name",
+  "description",
+  "path",
+  "mime_type",
+  "uuid",
+  "file_name"
+ ],
+ "xenobladex_collectible": [
+  "id",
+  "name",
+  "description",
+  "location_note",
+  "rarity",
+  "is_lucky_field"
+ ],
+ "xenobladex_collection": [
+  "id",
+  "region",
+  "reward_sp",
+  "reward_item"
+ ],
+ "xenobladex_collection_category": [
+  "id",
+  "name",
+  "prio"
+ ],
+ "xenobladex_collection_group": [
+  "id",
+  "reward_sp",
+  "reward_item",
+  "collection_id",
+  "collection_category_id",
+  "collectible1_id",
+  "collectible2_id",
+  "collectible3_id",
+  "collectible4_id",
+  "collectible5_id",
+  "collectible6_id",
+  "collectible7_id",
+  "collectible8_id"
+ ],
+ "xenobladex_equip_upgrade": [
+  "id",
+  "equip_upgrade_category_id",
+  "name",
+  "description",
+  "is_not_manufacturable",
+  "material_small1_id",
+  "material_small2_id",
+  "material_small3_id",
+  "material_large1_id",
+  "material_large2_id",
+  "material_large3_id",
+  "alternative_name",
+  "has_no_tiers"
+ ],
+ "xenobladex_equip_upgrade_category": [
+  "id",
+  "name",
+  "description",
+  "type"
+ ],
+ "xenobladex_equipupgrade_tier": [
+  "id",
+  "name",
+  "equipupgrade_id",
+  "credit_cost",
+  "resource_id",
+  "resource_count",
+  "description",
+  "material_count",
+  "material_count_individual",
+  "material1_count",
+  "material2_count",
+  "material3_count",
+  "material1_id",
+  "material2_id",
+  "material3_id",
+  "material_individual"
+ ],
+ "xenobladex_faq": [
+  "id",
+  "category",
+  "answer",
+  "name",
+  "answer_read_more"
+ ],
+ "xenobladex_guide": [
+  "id",
+  "name",
+  "copy",
+  "author",
+  "last_edited",
+  "created"
+ ],
+ "xenobladex_item": [
+  "id",
+  "name",
+  "rarity",
+  "credit_cost",
+  "ticket_cost",
+  "body_part",
+  "description",
+  "item_type"
+ ],
+ "xenobladex_item_material": [
+  "id",
+  "is_not_buyable",
+  "show_monsters"
+ ],
+ "xenobladex_item_resource": [
+  "id",
+  "region",
+  "location_note"
+ ],
+ "xenobladex_map": [
+  "id",
+  "name",
+  "attachment_id",
+  "description",
+  "grid_offset_x",
+  "grid_offset_Y",
+  "grid_tile_diameter",
+  "grid_tile_margin",
+  "grid_width",
+  "grid_height"
+ ],
+ "xenobladex_mission": [
+  "id",
+  "mission_type_id",
+  "name",
+  "description",
+  "locationNote",
+  "conditions",
+  "tasks",
+  "solution",
+  "rewards",
+  "person_id",
+  "person_unrelated",
+  "has_person",
+  "target_area",
+  "sidejob_type",
+  "difficulty",
+  "blade_level",
+  "chapter",
+  "map_geo_json"
+ ],
+ "xenobladex_mission_type": [
+  "id",
+  "name"
+ ],
+ "xenobladex_monster": [
+  "id",
+  "monster_type_id",
+  "name",
+  "level_min",
+  "level_max",
+  "time",
+  "weather",
+  "is_unique",
+  "ep",
+  "aggression_day",
+  "agression_night",
+  "agression_skell_day",
+  "agression_skell_night",
+  "description",
+  "location_note",
+  "region",
+  "is_story",
+  "hp",
+  "res_physic",
+  "res_laser",
+  "res_ether",
+  "res_thermo",
+  "res_electric",
+  "res_gravit",
+  "map_geo_json"
+ ],
+ "xenobladex_monster_material": [
+  "monster_id",
+  "material_id"
+ ],
+ "xenobladex_monster_type": [
+  "id",
+  "name",
+  "description",
+  "prio"
+ ],
+ "xenobladex_monster_type_material": [
+  "monster_type_id",
+  "material_id"
+ ],
+ "xenobladex_person": [
+  "id",
+  "name",
+  "age",
+  "description",
+  "location_note",
+  "species",
+  "conditions",
+  "activity_time",
+  "job",
+  "region"
+ ],
+ "xenobladex_user": [
+  "id",
+  "username",
+  "username_canonical",
+  "email",
+  "email_canonical",
+  "enabled",
+  "salt",
+  "password",
+  "last_login",
+  "locked",
+  "expired",
+  "expires_at",
+  "confirmation_token",
+  "password_requested_at",
+  "roles",
+  "credentials_expired",
+  "credentials_expire_at"
+ ]
+}
