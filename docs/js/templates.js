@@ -3445,7 +3445,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "    <a class=\"logo\" href=\".\"><img src=\"images/logo_xenobladex.jpg\"></a>\n" +
     "    <ul class=\"meta-nav\">\n" +
     "      <li>\n" +
-    "        <a href=\"http://www.xenoblade.org/phpBB3\" target=\"_blank\">Forum</a>\n" +
+    "        <a href=\"https://www.xenoblade-forum.org/\" target=\"_blank\">Forum</a>\n" +
     "      </li>\n" +
     "      <li>\n" +
     "        <a href=\"http://www.xenoblade.org\" target=\"_blank\">Xenoblade.org</a>\n" +
