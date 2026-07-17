@@ -7,55 +7,55 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "<head>\n" +
     "    <meta charset=\"UTF-8\" />\n" +
     "    <title>XenobladeX.org - Infos & Guides</title>\n" +
-    "    <link rel=\"icon\" type=\"image/png\" href=\"/favicon-32x32.png?v=XBBeY5Rbzx\" sizes=\"32x32\">\n" +
-    "    <link rel=\"icon\" type=\"image/png\" href=\"/favicon-194x194.png?v=XBBeY5Rbzx\" sizes=\"194x194\">\n" +
-    "    <link rel=\"icon\" type=\"image/png\" href=\"/favicon-96x96.png?v=XBBeY5Rbzx\" sizes=\"96x96\">\n" +
-    "    <link rel=\"icon\" type=\"image/png\" href=\"/android-chrome-192x192.png?v=XBBeY5Rbzx\" sizes=\"192x192\">\n" +
-    "    <link rel=\"icon\" type=\"image/png\" href=\"/favicon-16x16.png?v=XBBeY5Rbzx\" sizes=\"16x16\">\n" +
-    "    <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"/apple-touch-icon-57x57.png?v=XBBeY5Rbzx\">\n" +
-    "    <link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"/apple-touch-icon-60x60.png?v=XBBeY5Rbzx\">\n" +
-    "    <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"/apple-touch-icon-72x72.png?v=XBBeY5Rbzx\">\n" +
-    "    <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"/apple-touch-icon-76x76.png?v=XBBeY5Rbzx\">\n" +
-    "    <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"/apple-touch-icon-114x114.png?v=XBBeY5Rbzx\">\n" +
-    "    <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"/apple-touch-icon-120x120.png?v=XBBeY5Rbzx\">\n" +
-    "    <link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"/apple-touch-icon-144x144.png?v=XBBeY5Rbzx\">\n" +
-    "    <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"/apple-touch-icon-152x152.png?v=XBBeY5Rbzx\">\n" +
-    "    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon-180x180.png?v=XBBeY5Rbzx\">\n" +
-    "    <link rel=\"manifest\" href=\"/manifest.json?v=XBBeY5Rbzx\">\n" +
-    "    <link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg?v=XBBeY5Rbzx\" color=\"#5bbad5\">\n" +
-    "    <link rel=\"shortcut icon\" href=\"/favicon.ico?v=XBBeY5Rbzx\">\n" +
+    "    <link rel=\"icon\" type=\"image/png\" href=\"favicon-32x32.png?v=XBBeY5Rbzx\" sizes=\"32x32\">\n" +
+    "    <link rel=\"icon\" type=\"image/png\" href=\"favicon-194x194.png?v=XBBeY5Rbzx\" sizes=\"194x194\">\n" +
+    "    <link rel=\"icon\" type=\"image/png\" href=\"favicon-96x96.png?v=XBBeY5Rbzx\" sizes=\"96x96\">\n" +
+    "    <link rel=\"icon\" type=\"image/png\" href=\"android-chrome-192x192.png?v=XBBeY5Rbzx\" sizes=\"192x192\">\n" +
+    "    <link rel=\"icon\" type=\"image/png\" href=\"favicon-16x16.png?v=XBBeY5Rbzx\" sizes=\"16x16\">\n" +
+    "    <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"apple-touch-icon-57x57.png?v=XBBeY5Rbzx\">\n" +
+    "    <link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"apple-touch-icon-60x60.png?v=XBBeY5Rbzx\">\n" +
+    "    <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"apple-touch-icon-72x72.png?v=XBBeY5Rbzx\">\n" +
+    "    <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"apple-touch-icon-76x76.png?v=XBBeY5Rbzx\">\n" +
+    "    <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"apple-touch-icon-114x114.png?v=XBBeY5Rbzx\">\n" +
+    "    <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"apple-touch-icon-120x120.png?v=XBBeY5Rbzx\">\n" +
+    "    <link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"apple-touch-icon-144x144.png?v=XBBeY5Rbzx\">\n" +
+    "    <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"apple-touch-icon-152x152.png?v=XBBeY5Rbzx\">\n" +
+    "    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"apple-touch-icon-180x180.png?v=XBBeY5Rbzx\">\n" +
+    "    <link rel=\"manifest\" href=\"manifest.json?v=XBBeY5Rbzx\">\n" +
+    "    <link rel=\"mask-icon\" href=\"safari-pinned-tab.svg?v=XBBeY5Rbzx\" color=\"#5bbad5\">\n" +
+    "    <link rel=\"shortcut icon\" href=\"favicon.ico?v=XBBeY5Rbzx\">\n" +
     "    <meta name=\"msapplication-TileColor\" content=\"#49d7d5\">\n" +
-    "    <meta name=\"msapplication-TileImage\" content=\"/mstile-144x144.png?v=XBBeY5Rbzx\">\n" +
+    "    <meta name=\"msapplication-TileImage\" content=\"mstile-144x144.png?v=XBBeY5Rbzx\">\n" +
     "    <meta name=\"theme-color\" content=\"#373a3c\">\n" +
     "    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>\n" +
     "    <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>\n" +
-    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"/libraries/leaflet/leaflet.css\">\n" +
-    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"/libraries/leaflet-draw/leaflet.draw.css\">\n" +
-    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"/libraries/font-awesome/css/font-awesome.min.css\">\n" +
-    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"/libraries/bootstrap/css/bootstrap.min.css\">\n" +
-    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"/libraries/bootstrap/css/bootstrap-theme.min.css\">\n" +
-    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"/libraries/tether/css/tether.min.css\">\n" +
-    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"/libraries/tether/css/tether-theme-basic.min.css\">\n" +
-    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"/libraries/tether/css/tether-theme-arrows.min.css\">\n" +
-    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"/libraries/tether/css/tether-theme-arrows-dark.min.css\">\n" +
-    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"/libraries/xeditable/xeditable.css\">\n" +
-    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"/libraries/jquery-ui/jquery-ui.min.css\">\n" +
+    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"libraries/leaflet/leaflet.css\">\n" +
+    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"libraries/leaflet-draw/leaflet.draw.css\">\n" +
+    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"libraries/font-awesome/css/font-awesome.min.css\">\n" +
+    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"libraries/bootstrap/css/bootstrap.min.css\">\n" +
+    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"libraries/bootstrap/css/bootstrap-theme.min.css\">\n" +
+    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"libraries/tether/css/tether.min.css\">\n" +
+    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"libraries/tether/css/tether-theme-basic.min.css\">\n" +
+    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"libraries/tether/css/tether-theme-arrows.min.css\">\n" +
+    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"libraries/tether/css/tether-theme-arrows-dark.min.css\">\n" +
+    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"libraries/xeditable/xeditable.css\">\n" +
+    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"libraries/jquery-ui/jquery-ui.min.css\">\n" +
     "    <link type=\"text/css\" rel='stylesheet' href='/libraries/textangular/textAngular.css'>\n" +
     "    <link type=\"text/css\" rel='stylesheet' href='/libraries/angular-bootstrap-colorpicker/colorpicker.min.css'>\n" +
-    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"/css/main.css\">\n" +
+    "    <link type=\"text/css\" rel=\"stylesheet\" href=\"css/main.css\">\n" +
     "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no\">\n" +
     "    <meta name=\"fragment\" content=\"!\" />\n" +
     "    <meta property=\"og:url\" content=\"https://www.xenobladex.org\">\n" +
     "    <meta property=\"og:image\" content=\"https://www.xenobladex.org/images/og_image.jpg\">\n" +
     "    <meta property=\"og:title\" content=\"XenobladeX.org - Infos & Guides\">\n" +
-    "    <base href=\"/\">\n" +
+    "    <base href=\".\">\n" +
     "</head>\n" +
     "<body ng-app=\"app\">\n" +
     "<div ng-if=\"frontend\"  ng-include src=\"'views/_header.html'\"></div>\n" +
     "<main ng-class=\"{'main-content':frontend}\" role=\"main\">\n" +
     "    <div class=\"main-view\" ng-view></div>\n" +
-    "    <img class=\"body-bg\" src=\"/images/bg_xenobladex.jpg\" />\n" +
-    "    <img class=\"logo-game\" src=\"/images/logo_game.png\" />\n" +
+    "    <img class=\"body-bg\" src=\"images/bg_xenobladex.jpg\" />\n" +
+    "    <img class=\"logo-game\" src=\"images/logo_game.png\" />\n" +
     "</main>\n" +
     "<script>\n" +
     "    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n" +
@@ -67,27 +67,27 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "    ga('send', 'pageview');\n" +
     "\n" +
     "</script>\n" +
-    "<script type=\"text/javascript\" src=\"/bundles/fosjsrouting/js/router.js\"></script>\n" +
-    "<script type=\"text/javascript\" src=\"/js/routing?callback=fos.Router.setData\"></script>\n" +
-    "<script type=\"text/javascript\" src=\"/libraries/jquery-1.11.2.min.js\"></script>\n" +
-    "<script type=\"text/javascript\" src=\"/libraries/jquery-ui/jquery-ui.min.js\"></script>\n" +
-    "<script type=\"text/javascript\" src=\"/libraries/leaflet/leaflet.js\"></script>\n" +
-    "<script type=\"text/javascript\" src=\"/libraries/leaflet-draw/leaflet.draw.js\"></script>\n" +
-    "<script type=\"text/javascript\" src=\"/libraries/angular.min.js\"></script>\n" +
+    "<script type=\"text/javascript\" src=\"bundles/fosjsrouting/js/router.js\"></script>\n" +
+    "<script type=\"text/javascript\" src=\"js/routing?callback=fos.Router.setData\"></script>\n" +
+    "<script type=\"text/javascript\" src=\"libraries/jquery-1.11.2.min.js\"></script>\n" +
+    "<script type=\"text/javascript\" src=\"libraries/jquery-ui/jquery-ui.min.js\"></script>\n" +
+    "<script type=\"text/javascript\" src=\"libraries/leaflet/leaflet.js\"></script>\n" +
+    "<script type=\"text/javascript\" src=\"libraries/leaflet-draw/leaflet.draw.js\"></script>\n" +
+    "<script type=\"text/javascript\" src=\"libraries/angular.min.js\"></script>\n" +
     "<script type=\"text/javascript\" src='/libraries/angular-bootstrap-colorpicker/bootstrap-colorpicker-module.min.js'></script>\n" +
     "<script type=\"text/javascript\" src='/libraries/textangular/textAngular-rangy.min.js'></script>\n" +
     "<script type=\"text/javascript\" src='/libraries/textangular/textAngular-sanitize.min.js'></script>\n" +
     "<script type=\"text/javascript\" src='/libraries/textangular/textAngular.min.js'></script>\n" +
-    "<script type=\"text/javascript\" src=\"/libraries/angular-route.min.js\"></script>\n" +
-    "<script type=\"text/javascript\" src=\"/libraries/angular-cookies.min.js\"></script>\n" +
-    "<script type=\"text/javascript\" src=\"/libraries/tether/js/tether.min.js\"></script>\n" +
-    "<script type=\"text/javascript\" src=\"/libraries/ui-bootstrap-0.13.3.min.js\"></script>\n" +
-    "<script type=\"text/javascript\" src=\"/libraries/bootstrap/js/bootstrap.min.js\"></script>\n" +
-    "<script type=\"text/javascript\" src=\"/libraries/xeditable/xeditable.min.js\"></script>\n" +
-    "<script type=\"text/javascript\" src=\"/libraries/naturalSortVersionCaching.min.js\"></script>\n" +
-    "<script type=\"text/javascript\" src=\"/libraries/alphanum.js\"></script>\n" +
-    "<script type=\"text/javascript\" src=\"/js/main.min.js\"></script>\n" +
-    "<script type=\"text/javascript\" src=\"/js/templates.js\"></script>\n" +
+    "<script type=\"text/javascript\" src=\"libraries/angular-route.min.js\"></script>\n" +
+    "<script type=\"text/javascript\" src=\"libraries/angular-cookies.min.js\"></script>\n" +
+    "<script type=\"text/javascript\" src=\"libraries/tether/js/tether.min.js\"></script>\n" +
+    "<script type=\"text/javascript\" src=\"libraries/ui-bootstrap-0.13.3.min.js\"></script>\n" +
+    "<script type=\"text/javascript\" src=\"libraries/bootstrap/js/bootstrap.min.js\"></script>\n" +
+    "<script type=\"text/javascript\" src=\"libraries/xeditable/xeditable.min.js\"></script>\n" +
+    "<script type=\"text/javascript\" src=\"libraries/naturalSortVersionCaching.min.js\"></script>\n" +
+    "<script type=\"text/javascript\" src=\"libraries/alphanum.js\"></script>\n" +
+    "<script type=\"text/javascript\" src=\"js/main.min.js\"></script>\n" +
+    "<script type=\"text/javascript\" src=\"js/templates.js\"></script>\n" +
     "</body>\n" +
     "</html>"
   );
@@ -430,7 +430,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "            <div class=\"card\">\n" +
     "                <div class=\"image-wrapper text-xs-center\">\n" +
     "                    <a ng-if=\"attachment.mime_type.indexOf('image') !== -1\" href=\"#\" data-toggle=\"modal\" data-target=\"#image-zoom-{{$index}}\">\n" +
-    "                        <img class=\"card-img-top img-responsive\" ng-src=\"/xenobladex/attachment/{{attachment.id}}\" />\n" +
+    "                        <img class=\"card-img-top img-responsive\" ng-src=\"xenobladex/attachment/{{attachment.id}}\" />\n" +
     "                    </a>\n" +
     "                    <div class=\"mime-type\" ng-if=\"attachment.mime_type.indexOf('image') === -1\">\n" +
     "                        <span class=\"fa fa-file fa-5x m-t-2\"></span>\n" +
@@ -455,7 +455,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "                                </button>\n" +
     "                            </div>\n" +
     "                            <div class=\"modal-body text-xs-center\">\n" +
-    "                                <img class=\"img-responsive\" ng-src=\"/xenobladex/attachment/{{attachment.id}}\" />\n" +
+    "                                <img class=\"img-responsive\" ng-src=\"xenobladex/attachment/{{attachment.id}}\" />\n" +
     "                            </div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
@@ -489,7 +489,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "                    <div class=\"row m-t-2\">\n" +
     "                        <div class=\"col-lg-3 m-b-1\" ng-if=\"attachmentList\" ng-repeat=\"attachment in attachmentList | listFilter:modalFilterValue:'name'\" ng-class=\"{'clear-both': $index%4==0}\">\n" +
     "                            <div ng-click=\"selectOption(attachment)\" class=\"attachment-thumbnail text-xs-center\">\n" +
-    "                                <img ng-if=\"attachment.mime_type.indexOf('image') !== -1\" class=\"card-img-top img-responsive img-thumbnail\" ng-src=\"/xenobladex/attachment/{{attachment.id}}\" />\n" +
+    "                                <img ng-if=\"attachment.mime_type.indexOf('image') !== -1\" class=\"card-img-top img-responsive img-thumbnail\" ng-src=\"xenobladex/attachment/{{attachment.id}}\" />\n" +
     "                                <div class=\"mime-type\" ng-if=\"attachment.mime_type.indexOf('image') === -1\">\n" +
     "                                    <span class=\"fa fa-file fa-5x m-t-2\"></span>\n" +
     "                                    <p>{{attachment.mime_type}}</p>\n" +
@@ -530,7 +530,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "            <div class=\"alert alert-warning m-y-2\" ng-show=\"vm.deletedCollectible\">\n" +
     "                <a ng-click=\"vm.addDeletedCollectible()\" href=\"#\">Gelöschte Zeile wiederherstellen</a>\n" +
     "            </div>\n" +
-    "            <a href=\"/admin/sammelitems/was-fehlt\" class=\"btn-primary btn\">Welche Daten fehlen?</a>\n" +
+    "            <a href=\"admin/sammelitems/was-fehlt\" class=\"btn-primary btn\">Welche Daten fehlen?</a>\n" +
     "            <input type=\"text\" class=\"form-control text m-y-1\" ng-model=\"nameFilter\" ng-model-options='{ debounce: 200 }' placeholder=\"Filtern...\" />\n" +
     "            <collapsed-table-list add-form=\"true\">\n" +
     "                <collectible-form collectible=\"newCollectible\">\n" +
@@ -629,7 +629,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
 
   $templateCache.put('js/data/collection/view/collectibleMissingDataView.html',
     "<div class=\"missing-data-view\">\n" +
-    "<a href=\"/admin/sammelitems\" class=\"btn-primary btn\">Sammelitems</a>\n" +
+    "<a href=\"admin/sammelitems\" class=\"btn-primary btn\">Sammelitems</a>\n" +
     "    <div class=\"table-responsive m-t-2\">\n" +
     "        <table class=\"table table-bordered\">\n" +
     "            <thead>\n" +
@@ -716,7 +716,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "            <div class=\"content-box p-b-1\">\n" +
     "                <header>\n" +
     "                    <h5>{{collectible.name}}</h5>\n" +
-    "                    <span><a ng-href=\"/kollektikon#kollektikon-kategorie-{{collectible.collection_group}}\">{{collectible.category_name}} - {{collectible.slot}}</a></span>\n" +
+    "                    <span><a ng-href=\"kollektikon#kollektikon-kategorie-{{collectible.collection_group}}\">{{collectible.category_name}} - {{collectible.slot}}</a></span>\n" +
     "                    <span class=\"rarity clear-both\" ng-class=\"getValidCssClass(collectible.rarity)\">{{collectible.rarity}}</span>\n" +
     "                </header>\n" +
     "                <hr class=\"m-x-1\" />\n" +
@@ -930,28 +930,28 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "                            <strong>{{collectionCategoryById.name}}</strong>\n" +
     "                        </td>\n" +
     "                        <td style=\"text-align: center;\" collectible-by-id=\"{{collectionGroup.collectible1}}\" ng-class=\"{'lucky-field': collectibleById.is_lucky_field}\">\n" +
-    "                            <a ng-if=\"collectibleById\" ng-href=\"/sammelitems#sammelitem-{{collectibleById.id}}\">{{collectibleById.name}}</a>\n" +
+    "                            <a ng-if=\"collectibleById\" ng-href=\"sammelitems#sammelitem-{{collectibleById.id}}\">{{collectibleById.name}}</a>\n" +
     "                        </td>\n" +
     "                        <td style=\"text-align: center;\" collectible-by-id=\"{{collectionGroup.collectible2}}\" ng-class=\"{'lucky-field': collectibleById.is_lucky_field}\">\n" +
-    "                            <a ng-if=\"collectibleById\" ng-href=\"/sammelitems#sammelitem-{{collectibleById.id}}\">{{collectibleById.name}}</a>\n" +
+    "                            <a ng-if=\"collectibleById\" ng-href=\"sammelitems#sammelitem-{{collectibleById.id}}\">{{collectibleById.name}}</a>\n" +
     "                        </td>\n" +
     "                        <td style=\"text-align: center;\" collectible-by-id=\"{{collectionGroup.collectible3}}\" ng-class=\"{'lucky-field': collectibleById.is_lucky_field}\">\n" +
-    "                            <a ng-if=\"collectibleById\" ng-href=\"/sammelitems#sammelitem-{{collectibleById.id}}\">{{collectibleById.name}}</a>\n" +
+    "                            <a ng-if=\"collectibleById\" ng-href=\"sammelitems#sammelitem-{{collectibleById.id}}\">{{collectibleById.name}}</a>\n" +
     "                        </td>\n" +
     "                        <td style=\"text-align: center;\" collectible-by-id=\"{{collectionGroup.collectible4}}\" ng-class=\"{'lucky-field': collectibleById.is_lucky_field}\">\n" +
-    "                            <a ng-if=\"collectibleById\" ng-href=\"/sammelitems#sammelitem-{{collectibleById.id}}\">{{collectibleById.name}}</a>\n" +
+    "                            <a ng-if=\"collectibleById\" ng-href=\"sammelitems#sammelitem-{{collectibleById.id}}\">{{collectibleById.name}}</a>\n" +
     "                        </td>\n" +
     "                        <td style=\"text-align: center;\" collectible-by-id=\"{{collectionGroup.collectible5}}\" ng-class=\"{'lucky-field': collectibleById.is_lucky_field}\">\n" +
-    "                            <a ng-if=\"collectibleById\" ng-href=\"/sammelitems#sammelitem-{{collectibleById.id}}\">{{collectibleById.name}}</a>\n" +
+    "                            <a ng-if=\"collectibleById\" ng-href=\"sammelitems#sammelitem-{{collectibleById.id}}\">{{collectibleById.name}}</a>\n" +
     "                        </td>\n" +
     "                        <td style=\"text-align: center;\" collectible-by-id=\"{{collectionGroup.collectible6}}\" ng-class=\"{'lucky-field': collectibleById.is_lucky_field}\">\n" +
-    "                            <a ng-if=\"collectibleById\" ng-href=\"/sammelitems#sammelitem-{{collectibleById.id}}\">{{collectibleById.name}}</a>\n" +
+    "                            <a ng-if=\"collectibleById\" ng-href=\"sammelitems#sammelitem-{{collectibleById.id}}\">{{collectibleById.name}}</a>\n" +
     "                        </td>\n" +
     "                        <td style=\"text-align: center;\" collectible-by-id=\"{{collectionGroup.collectible7}}\" ng-class=\"{'lucky-field': collectibleById.is_lucky_field}\">\n" +
-    "                            <a ng-if=\"collectibleById\" ng-href=\"/sammelitems#sammelitem-{{collectibleById.id}}\">{{collectibleById.name}}</a>\n" +
+    "                            <a ng-if=\"collectibleById\" ng-href=\"sammelitems#sammelitem-{{collectibleById.id}}\">{{collectibleById.name}}</a>\n" +
     "                        </td>\n" +
     "                        <td style=\"text-align: center;\" collectible-by-id=\"{{collectionGroup.collectible8}}\" ng-class=\"{'lucky-field': collectibleById.is_lucky_field}\">\n" +
-    "                            <a ng-if=\"collectibleById\" ng-href=\"/sammelitems#sammelitem-{{collectibleById.id}}\">{{collectibleById.name}}</a>\n" +
+    "                            <a ng-if=\"collectibleById\" ng-href=\"sammelitems#sammelitem-{{collectibleById.id}}\">{{collectibleById.name}}</a>\n" +
     "                        </td>\n" +
     "                        <td style=\"text-align: center;\">\n" +
     "                            {{collectionGroup.reward_sp}} TP, {{collectionGroup.reward_item}}\n" +
@@ -1023,7 +1023,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "            <div class=\"alert alert-warning m-y-2\" ng-show=\"vm.deletedEquipUpgrade\">\n" +
     "                <a ng-click=\"vm.addDeletedEquipUpgrade()\" href=\"#\">Gelöschte Zeile wiederherstellen</a>\n" +
     "            </div>\n" +
-    "            <a href=\"/admin/erweiterungen/was-fehlt\" class=\"btn-primary btn\">Welche Daten fehlen?</a>\n" +
+    "            <a href=\"admin/erweiterungen/was-fehlt\" class=\"btn-primary btn\">Welche Daten fehlen?</a>\n" +
     "            <input type=\"text\" class=\"form-control text m-y-1\" ng-model=\"filter.name\" ng-model-options='{ debounce: 200 }' placeholder=\"Filtern...\" />\n" +
     "            <collapsed-table-list add-form=\"true\">\n" +
     "                <equip-upgrade-form equip-upgrade=\"newEquipUpgrade\">\n" +
@@ -1053,7 +1053,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "        </div>\n" +
     "        <div class=\"m-b-2\" param-from-url param-name=\"equipUpgradeId\">\n" +
     "            <div ng-if=\"paramFromUrl\" equip-upgrade-by-id=\"{{paramFromUrl}}\">\n" +
-    "                <a href=\"/admin/erweiterungen\" class=\"btn btn-primary m-b-1\"><span class=\"fa fa-arrow-circle-left\"></span> Erweiterungen</a>\n" +
+    "                <a href=\"admin/erweiterungen\" class=\"btn btn-primary m-b-1\"><span class=\"fa fa-arrow-circle-left\"></span> Erweiterungen</a>\n" +
     "                <div ng-if=\"equipUpgradeById\">\n" +
     "                    <h2 class=\"m-b-1\">{{equipUpgradeById.name}} ({{equipUpgradeById.category_type}})</h2>\n" +
     "                    <p>{{equipUpgradeById.description}}</p>\n" +
@@ -1184,7 +1184,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "</div>\n" +
     "<div ng-if=\"form.equipUpgrade.id\">\n" +
     "    <div class=\"clear-both\"></div>\n" +
-    "    <a class=\"btn btn-primary m-r-2\" href=\"/admin/erweiterungen/{{form.equipUpgrade.id}}/stufen\">Stufen <span class=\"fa fa-arrow-circle-right\"></span></a>\n" +
+    "    <a class=\"btn btn-primary m-r-2\" href=\"admin/erweiterungen/{{form.equipUpgrade.id}}/stufen\">Stufen <span class=\"fa fa-arrow-circle-right\"></span></a>\n" +
     "    <button ng-if=\"(form.equipUpgradeTiers | filter:{equip_upgrade:form.equipUpgrade.id}:true).length==0\" class=\"btn btn-success\" type=\"button\" ng-click=\"form.createEquipUpgradeTiers()\">Stufen anlegen</button>\n" +
     "    <!--<div class=\"clear-both m-y-3\"></div>-->\n" +
     "    <!--<button ng-if=\"(form.equipUpgradeTiers | filter: {equip_upgrade: form.equipUpgrade.id}).length>0\" class=\"btn btn-danger\" type=\"button\" ng-click=\"form.deleteEquipUpgradeTiers()\">Stufen löschen</button>-->\n" +
@@ -1194,7 +1194,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
 
   $templateCache.put('js/data/equip/view/equipUpgradeMissingDataView.html',
     "<div class=\"missing-data-view\">\n" +
-    "    <a href=\"/admin/erweiterungen\" class=\"btn-primary btn\">Erweiterungen</a>\n" +
+    "    <a href=\"admin/erweiterungen\" class=\"btn-primary btn\">Erweiterungen</a>\n" +
     "    <div class=\"table-responsive m-t-2\">\n" +
     "        <table class=\"table table-bordered\">\n" +
     "            <thead>\n" +
@@ -1327,7 +1327,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "                                    {{equipUpgradeTier.credit_cost}} Credits\n" +
     "                                    <ul>\n" +
     "                                        <li ng-repeat=\"i in [1,2,3] track by $index\" material-by-id=\"{{getEquipUpgradeTierMaterial(equipUpgrade, equipUpgradeTier, i)}}\" ng-if=\"getEquipUpgradeTierMaterial(equipUpgrade, equipUpgradeTier, i)\">\n" +
-    "                                            <a ng-href=\"/material#material-{{materialById.id}}\">{{materialById.name}}</a>\n" +
+    "                                            <a ng-href=\"material#material-{{materialById.id}}\">{{materialById.name}}</a>\n" +
     "                                            <span ng-if=\"!equipUpgradeTier.material_count_individual\">\n" +
     "                                                ({{equipUpgradeTier.material_count}})\n" +
     "                                            </span>\n" +
@@ -1349,7 +1349,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "                                        {{equipUpgradeTier.credit_cost}} Credits\n" +
     "                                        <ul>\n" +
     "                                            <li ng-repeat=\"i in [1,2,3] track by $index\" material-by-id=\"{{getEquipUpgradeTierMaterial(equipUpgrade, equipUpgradeTier, i)}}\" ng-if=\"getEquipUpgradeTierMaterial(equipUpgrade, equipUpgradeTier, i)\">\n" +
-    "                                                <a ng-href=\"/material#material-{{materialById.id}}\">{{materialById.name}}</a>\n" +
+    "                                                <a ng-href=\"material#material-{{materialById.id}}\">{{materialById.name}}</a>\n" +
     "                                                <span ng-if=\"!equipUpgradeTier.material_count_individual\">\n" +
     "                                                    ({{equipUpgradeTier.material_count}})\n" +
     "                                                </span>\n" +
@@ -1576,7 +1576,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "    <div class=\"admin-view col-md-12 p-y-1\">\n" +
     "        <h1 class=\"m-b-1\">Guides</h1>\n" +
     "        <guide-admin>\n" +
-    "            <a href=\"/admin/guide\" class=\"btn btn-success m-b-2\">Guide anlegen</a>\n" +
+    "            <a href=\"admin/guide\" class=\"btn btn-success m-b-2\">Guide anlegen</a>\n" +
     "            <div class=\"table-responsive\">\n" +
     "                <table class=\"table table-striped\">\n" +
     "                    <thead>\n" +
@@ -1613,7 +1613,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "                            {{guide.created | date:'dd.MM.yyyy HH:mm'}} Uhr\n" +
     "                        </td>\n" +
     "                        <td>\n" +
-    "                            <a ng-href=\"/admin/guide/{{guide.id}}\" class=\"btn btn-primary pull-right\">Bearbeiten</a>\n" +
+    "                            <a ng-href=\"admin/guide/{{guide.id}}\" class=\"btn btn-primary pull-right\">Bearbeiten</a>\n" +
     "                        </td>\n" +
     "                    </tr>\n" +
     "                    </tbody>\n" +
@@ -1655,8 +1655,8 @@ angular.module('app').run(['$templateCache', function($templateCache) {
   $templateCache.put('js/data/guide/view/guideFormView.html',
     "<div class=\"row\">\n" +
     "    <div class=\"col-xs-12 p-l-0 p-b-1\">\n" +
-    "        <a href=\"/admin/guides\" class=\"btn btn-primary pull-left\"><i class=\"fa fa-arrow-left\"></i> Guides</a>\n" +
-    "        <a target=\"_blank\" href=\"/guides/{{form.guide.id}}\" class=\" pull-left btn btn-primary m-l-1\">Vorschau</a>\n" +
+    "        <a href=\"admin/guides\" class=\"btn btn-primary pull-left\"><i class=\"fa fa-arrow-left\"></i> Guides</a>\n" +
+    "        <a target=\"_blank\" href=\"guides/{{form.guide.id}}\" class=\" pull-left btn btn-primary m-l-1\">Vorschau</a>\n" +
     "    </div>\n" +
     "</div>\n" +
     "<div class=\"content-box p-x-1 p-y-1\">\n" +
@@ -1840,7 +1840,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "    </ul>\n" +
     "    <div class=\"row m-t-1 map-container\">\n" +
     "        <div class=\"col-xs-12\">\n" +
-    "            <img ng-if=\"currentMap\" ng-click=\"addMapmarker($event)\" ng-src=\"/xenobladex/attachment/{{currentMap.attachment.id}}\" />\n" +
+    "            <img ng-if=\"currentMap\" ng-click=\"addMapmarker($event)\" ng-src=\"xenobladex/attachment/{{currentMap.attachment.id}}\" />\n" +
     "            <div class=\"mapmarker-wrapper\" ng-repeat=\"mapmarker in mapmarkers | filter:{person: { id: newMapmarker.person.id }}\" ng-click=\"setZIndex($event)\" style=\"position: absolute; top: {{mapmarker.y_coord}}px; left: {{mapmarker.x_coord}}px;\">\n" +
     "                <button class=\"btn btn-primary\" data-toggle=\"collapse\" data-target=\"#mapmarker-edit-{{$index}}\" aria-expanded=\"false\">\n" +
     "                    <span class=\"fa fa-map-marker\"></span> {{mapmarker.person.name}} - {{mapmarker.name}}\n" +
@@ -1900,7 +1900,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "                    </div>\n" +
     "                    <div class=\"row m-t-1 map-container\">\n" +
     "                        <div class=\"col-xs-12\">\n" +
-    "                            <img ng-if=\"currentMap\" ng-click=\"addMapmarker($event)\" ng-src=\"/xenobladex/attachment/{{currentMap.attachment.id}}\" />\n" +
+    "                            <img ng-if=\"currentMap\" ng-click=\"addMapmarker($event)\" ng-src=\"xenobladex/attachment/{{currentMap.attachment.id}}\" />\n" +
     "                            <div class=\"mapmarker-wrapper\" ng-repeat=\"mapmarker in shownMapmarkers\" ng-click=\"setZIndex($event)\" style=\"position: absolute; top: {{mapmarker.y_coord}}px; left: {{mapmarker.x_coord}}px;\">\n" +
     "                                <button class=\"btn btn-primary\" data-toggle=\"collapse\" data-target=\"#mapmarker-edit-{{$index}}\" aria-expanded=\"false\">\n" +
     "                                    <span class=\"fa fa-map-marker\"></span> {{mapmarker.name}}\n" +
@@ -1939,7 +1939,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "    </div>\n" +
     "    <div ng-if=\"currentMap\" class=\"map-container\">\n" +
     "        <map-grid map=\"currentMap\"></map-grid>\n" +
-    "        <img ng-src=\"/xenobladex/attachment/{{currentMap.attachment.id}}\" />\n" +
+    "        <img ng-src=\"xenobladex/attachment/{{currentMap.attachment.id}}\" />\n" +
     "    </div>\n" +
     "</div>"
   );
@@ -1954,7 +1954,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "            <div class=\"alert alert-warning m-y-2\" ng-show=\"vm.deletedMaterial\">\n" +
     "                <a ng-click=\"vm.addDeletedMaterial()\" href=\"#\">Gelöschte Zeile wiederherstellen</a>\n" +
     "            </div>\n" +
-    "            <a href=\"/admin/material/was-fehlt\" class=\"btn-primary btn\">Welche Daten fehlen?</a>\n" +
+    "            <a href=\"admin/material/was-fehlt\" class=\"btn-primary btn\">Welche Daten fehlen?</a>\n" +
     "            <input type=\"text\" class=\"form-control text m-y-1\" ng-model=\"nameFilter\" ng-model-options='{ debounce: 200 }' placeholder=\"Filtern...\" />\n" +
     "            <collapsed-table-list add-form=\"true\">\n" +
     "                <material-form material=\"newMaterial\">\n" +
@@ -2031,7 +2031,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
 
   $templateCache.put('js/data/material/view/materialMissingDataView.html',
     "<div class=\"missing-data-view\">\n" +
-    "<a href=\"/admin/material\" class=\"btn-primary btn\">Material</a>\n" +
+    "<a href=\"admin/material\" class=\"btn-primary btn\">Material</a>\n" +
     "    <div class=\"table-responsive m-t-2\">\n" +
     "        <table class=\"table table-bordered\">\n" +
     "            <thead>\n" +
@@ -2133,7 +2133,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "                        <strong ng-if=\"material.monsters.length>0\">Kreaturen:</strong>\n" +
     "                        <ul>\n" +
     "                            <li ng-repeat=\"monster in material.monsters\" monster-by-id=\"{{monster}}\">\n" +
-    "                                <a ng-href=\"/kreaturen#monster-{{monster}}\">{{monsterById.name}}</a>\n" +
+    "                                <a ng-href=\"kreaturen#monster-{{monster}}\">{{monsterById.name}}</a>\n" +
     "                            </li>\n" +
     "                        </ul>\n" +
     "                    </div>\n" +
@@ -2179,7 +2179,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "            <div class=\"alert alert-warning m-y-2\" ng-show=\"vm.deletedMission\">\n" +
     "                <a ng-click=\"vm.addDeletedMission()\" href=\"#\">Gelöschte Zeile wiederherstellen</a>\n" +
     "            </div>\n" +
-    "            <a href=\"/admin/missionen/was-fehlt\" class=\"btn-primary btn\">Welche Daten fehlen?</a>\n" +
+    "            <a href=\"admin/missionen/was-fehlt\" class=\"btn-primary btn\">Welche Daten fehlen?</a>\n" +
     "            <input type=\"text\" class=\"form-control text m-y-1\" ng-model=\"nameFilter\" ng-model-options='{ debounce: 200 }' placeholder=\"Filtern...\" />\n" +
     "            <collapsed-table-list add-form=\"true\">\n" +
     "                <mission-form mission=\"newMission\">\n" +
@@ -2282,7 +2282,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
 
   $templateCache.put('js/data/mission/view/missionMissingDataView.html',
     "<div class=\"missing-data-view\">\n" +
-    "<a href=\"/admin/missionen\" class=\"btn-primary btn\">Missionen</a>\n" +
+    "<a href=\"admin/missionen\" class=\"btn-primary btn\">Missionen</a>\n" +
     "    <div class=\"table-responsive m-t-2\">\n" +
     "        <table class=\"table table-bordered\">\n" +
     "            <thead>\n" +
@@ -2609,7 +2609,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "            <div class=\"alert alert-warning m-y-2\" ng-show=\"vm.deletedMonster\">\n" +
     "                <a ng-click=\"vm.addDeletedMonster()\" href=\"#\">Gelöschte Zeile wiederherstellen</a>\n" +
     "            </div>\n" +
-    "            <a href=\"/admin/kreaturen/was-fehlt\" class=\"btn-primary btn\">Welche Daten fehlen?</a>\n" +
+    "            <a href=\"admin/kreaturen/was-fehlt\" class=\"btn-primary btn\">Welche Daten fehlen?</a>\n" +
     "            <input type=\"text\" class=\"form-control text m-y-1\" ng-model=\"nameFilter\" ng-model-options='{ debounce: 200 }' placeholder=\"Filtern...\" />\n" +
     "            <collapsed-table-list add-form=\"true\">\n" +
     "                <monster-form monster=\"newMonster\">\n" +
@@ -2765,7 +2765,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
 
   $templateCache.put('js/data/monster/view/monsterMissingDataView.html',
     "<div class=\"missing-data-view\">\n" +
-    "    <a href=\"/admin/kreaturen\" class=\"btn-primary btn\">Monster</a>\n" +
+    "    <a href=\"admin/kreaturen\" class=\"btn-primary btn\">Monster</a>\n" +
     "    <div class=\"table-responsive m-t-2\">\n" +
     "        <table class=\"table table-bordered\">\n" +
     "            <thead>\n" +
@@ -2990,7 +2990,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "                                <strong ng-if=\"monster.materials.length>0\">Material:</strong>\n" +
     "                                <ul>\n" +
     "                                    <li ng-repeat=\"material in monster.materials\" material-by-id=\"{{material}}\">\n" +
-    "                                        <a ng-href=\"/material#material-{{material}}\">{{materialById.name}}</a>\n" +
+    "                                        <a ng-href=\"material#material-{{material}}\">{{materialById.name}}</a>\n" +
     "                                    </li>\n" +
     "                                </ul>\n" +
     "                            </div>\n" +
@@ -3068,7 +3068,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "            <div class=\"alert alert-warning m-y-2\" ng-show=\"vm.deletedPerson\">\n" +
     "                <a ng-click=\"vm.addDeletedPerson()\" href=\"#\">Gelöschte Zeile wiederherstellen</a>\n" +
     "            </div>\n" +
-    "            <a href=\"/admin/personen/was-fehlt\" class=\"btn-primary btn\">Welche Daten fehlen?</a>\n" +
+    "            <a href=\"admin/personen/was-fehlt\" class=\"btn-primary btn\">Welche Daten fehlen?</a>\n" +
     "            <input type=\"text\" class=\"form-control text m-y-1\" ng-model=\"nameFilter\" ng-model-options='{ debounce: 200 }' placeholder=\"Filtern...\" />\n" +
     "            <collapsed-table-list add-form=\"true\">\n" +
     "                <person-form person=\"newPerson\">\n" +
@@ -3120,7 +3120,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
 
   $templateCache.put('js/data/person/view/personMissingDataView.html',
     "<div class=\"missing-data-view\">\n" +
-    "<a href=\"/admin/personen\" class=\"btn-primary btn\">Personen</a>\n" +
+    "<a href=\"admin/personen\" class=\"btn-primary btn\">Personen</a>\n" +
     "    <div class=\"table-responsive m-t-2\">\n" +
     "        <table class=\"table table-bordered\">\n" +
     "            <thead>\n" +
@@ -3331,7 +3331,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "      </div>\n" +
     "    </form>\n" +
     "    <hr/>\n" +
-    "    <a href=\"/register\">Registrieren</a>\n" +
+    "    <a href=\"register\">Registrieren</a>\n" +
     "  </div>\n" +
     "</div>"
   );
@@ -3388,46 +3388,46 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "    <div class=\"col-xs-12 m-t-1\">\n" +
     "        <ul class=\"nav nav-pills\">\n" +
     "            <li class=\"nav-item\">\n" +
-    "                <a class=\"nav-link\" href=\"/admin\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/admin\">Admin</a>\n" +
+    "                <a class=\"nav-link\" href=\"admin\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"admin\">Admin</a>\n" +
     "            </li>\n" +
     "            <li class=\"nav-item\">\n" +
-    "                <a class=\"nav-link\" href=\"/admin/erweiterungen\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/admin/erweiterungen\">Erweiterungen</a>\n" +
+    "                <a class=\"nav-link\" href=\"admin/erweiterungen\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"admin/erweiterungen\">Erweiterungen</a>\n" +
     "            </li>\n" +
     "            <li class=\"nav-item\">\n" +
-    "                <a class=\"nav-link\" href=\"/admin/erweiterungs-kategorien\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/admin/erweiterungs-kategorien\">Erw.-Kategorien</a>\n" +
+    "                <a class=\"nav-link\" href=\"admin/erweiterungs-kategorien\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"admin/erweiterungs-kategorien\">Erw.-Kategorien</a>\n" +
     "            </li>\n" +
     "            <li class=\"nav-item\">\n" +
-    "                <a class=\"nav-link\" href=\"/admin/faq\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/admin/faq\">FAQ</a>\n" +
+    "                <a class=\"nav-link\" href=\"admin/faq\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"admin/faq\">FAQ</a>\n" +
     "            </li>\n" +
     "            <li class=\"nav-item\">\n" +
-    "                <a class=\"nav-link\" href=\"/admin/guides\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/admin/guides\">Guides</a>\n" +
+    "                <a class=\"nav-link\" href=\"admin/guides\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"admin/guides\">Guides</a>\n" +
     "            </li>\n" +
     "            <li class=\"nav-item\">\n" +
-    "                <a class=\"nav-link\" href=\"/admin/kollektikon\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/admin/kollektikon\">Kollektikon</a>\n" +
+    "                <a class=\"nav-link\" href=\"admin/kollektikon\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"admin/kollektikon\">Kollektikon</a>\n" +
     "            </li>\n" +
     "            <li class=\"nav-item\">\n" +
-    "                <a class=\"nav-link\" href=\"/admin/material\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/admin/material\">Material</a>\n" +
+    "                <a class=\"nav-link\" href=\"admin/material\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"admin/material\">Material</a>\n" +
     "            </li>\n" +
     "            <li class=\"nav-item\">\n" +
-    "                <a class=\"nav-link\" href=\"/admin/missionen\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/admin/missionen\">Missionen</a>\n" +
+    "                <a class=\"nav-link\" href=\"admin/missionen\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"admin/missionen\">Missionen</a>\n" +
     "            </li>\n" +
     "            <li class=\"nav-item\">\n" +
-    "                <a class=\"nav-link\" href=\"/admin/kreaturen\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/admin/kreaturen\">Monster</a>\n" +
+    "                <a class=\"nav-link\" href=\"admin/kreaturen\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"admin/kreaturen\">Monster</a>\n" +
     "            </li>\n" +
     "            <li class=\"nav-item\">\n" +
-    "                <a class=\"nav-link\" href=\"/admin/monster_gattungen\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/admin/monster_gattungen\">Gattungen</a>\n" +
+    "                <a class=\"nav-link\" href=\"admin/monster_gattungen\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"admin/monster_gattungen\">Gattungen</a>\n" +
     "            </li>\n" +
     "            <li class=\"nav-item\">\n" +
-    "                <a class=\"nav-link\" href=\"/admin/personen\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/admin/personen\">Personen</a>\n" +
+    "                <a class=\"nav-link\" href=\"admin/personen\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"admin/personen\">Personen</a>\n" +
     "            </li>\n" +
     "            <li class=\"nav-item\">\n" +
-    "                <a class=\"nav-link\" href=\"/admin/ressourcen\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/admin/ressourcen\">Ressourcen</a>\n" +
+    "                <a class=\"nav-link\" href=\"admin/ressourcen\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"admin/ressourcen\">Ressourcen</a>\n" +
     "            </li>\n" +
     "            <li class=\"nav-item\">\n" +
-    "                <a class=\"nav-link\" href=\"/admin/sammelitems\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/admin/sammelitems\">Sammelitems</a>\n" +
+    "                <a class=\"nav-link\" href=\"admin/sammelitems\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"admin/sammelitems\">Sammelitems</a>\n" +
     "            </li>\n" +
     "            <li class=\"nav-item\">\n" +
-    "                <a class=\"nav-link\" href=\"/admin/links\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/admin/links\">Links</a>\n" +
+    "                <a class=\"nav-link\" href=\"admin/links\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"admin/links\">Links</a>\n" +
     "            </li>\n" +
     "        </ul>\n" +
     "        <div ng-show=\"flash.message\" class=\"m-t-1\" ng-class=\"{'alert alert-danger':!flash.success, 'alert alert-success':flash.success}\">{{flash.message}}</div>\n" +
@@ -3442,7 +3442,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "  <a class=\"back-to-top\" href=\"#\" scroll-to=\"0\"><span class=\"fa fa-arrow-up\"></span> nach oben</a>\n" +
     "  <nav class=\"navbar navbar-dark bg-inverse\">\n" +
     "    <a slide-menu menu-id=\"js_main-nav\" class=\"mobile-nav-button\" href=\"#\"><span class=\"fa fa-align-justify\"></span></a>\n" +
-    "    <a class=\"logo\" href=\"/\"><img src=\"images/logo_xenobladex.jpg\"></a>\n" +
+    "    <a class=\"logo\" href=\".\"><img src=\"images/logo_xenobladex.jpg\"></a>\n" +
     "    <ul class=\"meta-nav\">\n" +
     "      <li>\n" +
     "        <a href=\"http://www.xenoblade.org/phpBB3\" target=\"_blank\">Forum</a>\n" +
@@ -3454,7 +3454,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "        <a href=\"http://www.xenoblade2.org\" target=\"_blank\">Xenoblade2.org</a>\n" +
     "      </li>\n" +
     "      <li>\n" +
-    "        <a href=\"/impressum\">Impressum</a>\n" +
+    "        <a href=\"impressum\">Impressum</a>\n" +
     "      </li>\n" +
     "    </ul>\n" +
     "  </nav>\n" +
@@ -3463,96 +3463,96 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "  <nav class=\"main-nav\">\n" +
     "    <ul>\n" +
     "      <li>\n" +
-    "        <a href=\"/\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/\">Aktuelles</a>\n" +
+    "        <a href=\".\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/\">Aktuelles</a>\n" +
     "      </li>\n" +
     "      <li>\n" +
-    "        <a href=\"#equipupgrades-submenu\" class=\"collapsed\" data-toggle=\"collapse\" aria-expanded=\"false\" onclick=\"return false;\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/erweiterungen\">Erweiterungen <span class=\"fa fa-arrow-circle-down\"></span></a>\n" +
-    "        <ul class=\"collapse\" id=\"equipupgrades-submenu\" highlighted-nav-item nav-item-class=\"in\" nav-item-route=\"/erweiterungen\">\n" +
+    "        <a href=\"#equipupgrades-submenu\" class=\"collapsed\" data-toggle=\"collapse\" aria-expanded=\"false\" onclick=\"return false;\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"erweiterungen\">Erweiterungen <span class=\"fa fa-arrow-circle-down\"></span></a>\n" +
+    "        <ul class=\"collapse\" id=\"equipupgrades-submenu\" highlighted-nav-item nav-item-class=\"in\" nav-item-route=\"erweiterungen\">\n" +
     "          <li>\n" +
-    "            <a href=\"/erweiterungen\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/erweiterungen\">Alle</a>\n" +
+    "            <a href=\"erweiterungen\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"erweiterungen\">Alle</a>\n" +
     "          </li>\n" +
     "          <li>\n" +
-    "            <a href=\"/erweiterungen/waffen\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/erweiterungen/waffen\">Waffen</a>\n" +
+    "            <a href=\"erweiterungen/waffen\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"erweiterungen/waffen\">Waffen</a>\n" +
     "          </li>\n" +
     "          <li>\n" +
-    "            <a href=\"/erweiterungen/rüstungen\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/erweiterungen/rüstungen\">Rüstungen</a>\n" +
+    "            <a href=\"erweiterungen/rüstungen\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"erweiterungen/rüstungen\">Rüstungen</a>\n" +
     "          </li>\n" +
     "          <li>\n" +
-    "            <a href=\"/erweiterungen/skell-waffen\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/erweiterungen/skell-waffen\">Skell-Waffen</a>\n" +
+    "            <a href=\"erweiterungen/skell-waffen\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"erweiterungen/skell-waffen\">Skell-Waffen</a>\n" +
     "          </li>\n" +
     "          <li>\n" +
-    "            <a href=\"/erweiterungen/skell-panzerungen\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/erweiterungen/skell-panzerungen\">Skell-Panzerungen</a>\n" +
+    "            <a href=\"erweiterungen/skell-panzerungen\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"erweiterungen/skell-panzerungen\">Skell-Panzerungen</a>\n" +
     "          </li>\n" +
     "          <li>\n" +
-    "            <a href=\"/erweiterungen/skell-zusätze\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/erweiterungen/skell-zusätze\">Skell-Zusätze</a>\n" +
+    "            <a href=\"erweiterungen/skell-zusätze\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"erweiterungen/skell-zusätze\">Skell-Zusätze</a>\n" +
     "          </li>\n" +
     "        </ul>\n" +
     "      </li>\n" +
     "      <li>\n" +
-    "        <a href=\"#guides-submenu\" class=\"collapsed\" data-toggle=\"collapse\" aria-expanded=\"false\" onclick=\"return false;\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/guides\">Guides <span class=\"fa fa-arrow-circle-down\"></span></a>\n" +
-    "        <ul class=\"collapse\" id=\"guides-submenu\" highlighted-nav-item nav-item-class=\"in\" nav-item-route=\"/guides\">\n" +
+    "        <a href=\"#guides-submenu\" class=\"collapsed\" data-toggle=\"collapse\" aria-expanded=\"false\" onclick=\"return false;\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"guides\">Guides <span class=\"fa fa-arrow-circle-down\"></span></a>\n" +
+    "        <ul class=\"collapse\" id=\"guides-submenu\" highlighted-nav-item nav-item-class=\"in\" nav-item-route=\"guides\">\n" +
     "          <li>\n" +
-    "            <a href=\"/guides/7\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/guides/7\">Aufstieg des Bluthummers</a>\n" +
-    "            <a href=\"/guides/3\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/guides/3\">Der Weg zum Ares 90</a>\n" +
-    "            <a href=\"/guides/11\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/guides/11\">Handelsabkommen</a>\n" +
-    "            <a href=\"/guides/9\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/guides/9\">Wetter & Effekte</a>\n" +
+    "            <a href=\"guides/7\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"guides/7\">Aufstieg des Bluthummers</a>\n" +
+    "            <a href=\"guides/3\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"guides/3\">Der Weg zum Ares 90</a>\n" +
+    "            <a href=\"guides/11\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"guides/11\">Handelsabkommen</a>\n" +
+    "            <a href=\"guides/9\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"guides/9\">Wetter & Effekte</a>\n" +
     "          </li>\n" +
     "        </ul>\n" +
     "      </li>\n" +
     "      <li>\n" +
-    "        <a href=\"/kollektikon\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/kollektikon\">Kollektikon</a>\n" +
+    "        <a href=\"kollektikon\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"kollektikon\">Kollektikon</a>\n" +
     "      </li>\n" +
     "      <li>\n" +
-    "        <a href=\"#monsters-submenu\" class=\"collapsed\" data-toggle=\"collapse\" aria-expanded=\"false\" onclick=\"return false;\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/kreaturen\">Kreaturen <span class=\"fa fa-arrow-circle-down\"></span></a>\n" +
-    "        <ul class=\"collapse\" id=\"monsters-submenu\" highlighted-nav-item nav-item-class=\"in\" nav-item-route=\"/kreaturen\">\n" +
+    "        <a href=\"#monsters-submenu\" class=\"collapsed\" data-toggle=\"collapse\" aria-expanded=\"false\" onclick=\"return false;\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"kreaturen\">Kreaturen <span class=\"fa fa-arrow-circle-down\"></span></a>\n" +
+    "        <ul class=\"collapse\" id=\"monsters-submenu\" highlighted-nav-item nav-item-class=\"in\" nav-item-route=\"kreaturen\">\n" +
     "          <li>\n" +
-    "            <a href=\"/kreaturen\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/kreaturen\">Alle</a>\n" +
+    "            <a href=\"kreaturen\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"kreaturen\">Alle</a>\n" +
     "          </li>\n" +
     "          <li>\n" +
-    "            <a href=\"/kreaturen/primordia\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/kreaturen/primordia\">Primordia</a>\n" +
+    "            <a href=\"kreaturen/primordia\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"kreaturen/primordia\">Primordia</a>\n" +
     "          </li>\n" +
     "          <li>\n" +
-    "            <a href=\"/kreaturen/noctilum\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/kreaturen/noctilum\">Noctilum</a>\n" +
+    "            <a href=\"kreaturen/noctilum\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"kreaturen/noctilum\">Noctilum</a>\n" +
     "          </li>\n" +
     "          <li>\n" +
-    "            <a href=\"/kreaturen/oblivia\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/kreaturen/oblivia\">Oblivia</a>\n" +
+    "            <a href=\"kreaturen/oblivia\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"kreaturen/oblivia\">Oblivia</a>\n" +
     "          </li>\n" +
     "          <li>\n" +
-    "            <a href=\"/kreaturen/sylvalum\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/kreaturen/sylvalum\">Sylvalum</a>\n" +
+    "            <a href=\"kreaturen/sylvalum\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"kreaturen/sylvalum\">Sylvalum</a>\n" +
     "          </li>\n" +
     "          <li>\n" +
-    "            <a href=\"/kreaturen/cauldros\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/kreaturen/cauldros\">Cauldros</a>\n" +
+    "            <a href=\"kreaturen/cauldros\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"kreaturen/cauldros\">Cauldros</a>\n" +
     "          </li>\n" +
     "        </ul>\n" +
     "      </li>\n" +
     "      <li>\n" +
-    "        <a href=\"/material\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/material\">Material</a>\n" +
+    "        <a href=\"material\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"material\">Material</a>\n" +
     "      </li>\n" +
     "      <li>\n" +
-    "        <a href=\"#missions-submenu\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/missionen\" class=\"collapsed\" data-toggle=\"collapse\" aria-expanded=\"false\" onclick=\"return false;\">Missionen <span class=\"fa fa-arrow-circle-down\"></span></a>\n" +
-    "        <ul id=\"missions-submenu\" class=\"collapse\" highlighted-nav-item nav-item-class=\"in\" nav-item-route=\"/missionen\">\n" +
+    "        <a href=\"#missions-submenu\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"missionen\" class=\"collapsed\" data-toggle=\"collapse\" aria-expanded=\"false\" onclick=\"return false;\">Missionen <span class=\"fa fa-arrow-circle-down\"></span></a>\n" +
+    "        <ul id=\"missions-submenu\" class=\"collapse\" highlighted-nav-item nav-item-class=\"in\" nav-item-route=\"missionen\">\n" +
     "          <li>\n" +
-    "            <a href=\"/missionen\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"/missionen\">Alle</a>\n" +
+    "            <a href=\"missionen\" highlighted-nav-item nav-item-route-equals=\"true\" nav-item-class=\"active\" nav-item-route=\"missionen\">Alle</a>\n" +
     "          </li>\n" +
     "          <li>\n" +
-    "            <a href=\"/missionen/handlung\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/missionen/handlung\">Handlung</a>\n" +
+    "            <a href=\"missionen/handlung\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"missionen/handlung\">Handlung</a>\n" +
     "          </li>\n" +
     "          <li>\n" +
-    "            <a href=\"/missionen/harmonie\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/missionen/harmonie\">Harmonie</a>\n" +
+    "            <a href=\"missionen/harmonie\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"missionen/harmonie\">Harmonie</a>\n" +
     "          </li>\n" +
     "          <li>\n" +
-    "            <a href=\"/missionen/standard\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/missionen/standard\">Standard</a>\n" +
+    "            <a href=\"missionen/standard\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"missionen/standard\">Standard</a>\n" +
     "          </li>\n" +
     "          <li>\n" +
-    "            <a href=\"/missionen/nebenjob\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/missionen/nebenjob\">Nebenjob</a>\n" +
+    "            <a href=\"missionen/nebenjob\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"missionen/nebenjob\">Nebenjob</a>\n" +
     "          </li>\n" +
     "        </ul>\n" +
     "      </li>\n" +
     "      <li>\n" +
-    "        <a href=\"/sammelitems\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/sammelitems\">Sammelitems</a>\n" +
+    "        <a href=\"sammelitems\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"sammelitems\">Sammelitems</a>\n" +
     "      </li>\n" +
     "      <li>\n" +
-    "        <a href=\"/faq\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"/faq\">FAQ</a>\n" +
+    "        <a href=\"faq\" highlighted-nav-item nav-item-class=\"active\" nav-item-route=\"faq\">FAQ</a>\n" +
     "      </li>\n" +
     "    </ul>\n" +
     "  </nav>\n" +
@@ -3599,23 +3599,23 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "            </div>\n" +
     "            <h2>Bereiche</h2>\n" +
     "            <div class=\"list-group m-t-1\">\n" +
-    "                <a class=\"list-group-item\" href=\"/admin/dateien\">Dateien verwalten</a>\n" +
-    "                <a class=\"list-group-item\" href=\"/admin/faq\">FAQ</a>\n" +
-    "                <a class=\"list-group-item\" href=\"/admin/guides\">Guides</a>\n" +
-    "                <a class=\"list-group-item\" href=\"/admin/erweiterungen\">Erweiterungen</a>\n" +
-    "                <a class=\"list-group-item\" href=\"/admin/erweiterungs-kategorien\">Erw.-Kategorien</a>\n" +
-    "                <a class=\"list-group-item\" href=\"/admin/karten\">Karten</a>\n" +
-    "                <a class=\"list-group-item\" href=\"/admin/kollektikon\">Kollektikon</a>\n" +
-    "                <!--<a class=\"list-group-item\" href=\"/admin/kartenpunkte\">Kartenpunkte</a>-->\n" +
-    "                <a class=\"list-group-item\" href=\"/admin/links\">Links</a>\n" +
-    "                <a class=\"list-group-item\" href=\"/admin/material\">Material</a>\n" +
-    "                <a class=\"list-group-item\" href=\"/admin/missionen\">Missionen</a>\n" +
-    "                <a class=\"list-group-item\" href=\"/admin/kreaturen\">Monster</a>\n" +
-    "                <a class=\"list-group-item\" href=\"/admin/monster_gattungen\">Monster-Gattungen</a>\n" +
-    "                <a class=\"list-group-item\" href=\"/admin/personen\">Personen</a>\n" +
-    "                <a class=\"list-group-item\" href=\"/admin/ressourcen\">Ressourcen</a>\n" +
-    "                <a class=\"list-group-item\" href=\"/admin/sammelitems\">Sammelitems</a>\n" +
-    "                <!--<a class=\"list-group-item\" href=\"/admin/segmente\">Segmente</a>-->\n" +
+    "                <a class=\"list-group-item\" href=\"admin/dateien\">Dateien verwalten</a>\n" +
+    "                <a class=\"list-group-item\" href=\"admin/faq\">FAQ</a>\n" +
+    "                <a class=\"list-group-item\" href=\"admin/guides\">Guides</a>\n" +
+    "                <a class=\"list-group-item\" href=\"admin/erweiterungen\">Erweiterungen</a>\n" +
+    "                <a class=\"list-group-item\" href=\"admin/erweiterungs-kategorien\">Erw.-Kategorien</a>\n" +
+    "                <a class=\"list-group-item\" href=\"admin/karten\">Karten</a>\n" +
+    "                <a class=\"list-group-item\" href=\"admin/kollektikon\">Kollektikon</a>\n" +
+    "                <!--<a class=\"list-group-item\" href=\"admin/kartenpunkte\">Kartenpunkte</a>-->\n" +
+    "                <a class=\"list-group-item\" href=\"admin/links\">Links</a>\n" +
+    "                <a class=\"list-group-item\" href=\"admin/material\">Material</a>\n" +
+    "                <a class=\"list-group-item\" href=\"admin/missionen\">Missionen</a>\n" +
+    "                <a class=\"list-group-item\" href=\"admin/kreaturen\">Monster</a>\n" +
+    "                <a class=\"list-group-item\" href=\"admin/monster_gattungen\">Monster-Gattungen</a>\n" +
+    "                <a class=\"list-group-item\" href=\"admin/personen\">Personen</a>\n" +
+    "                <a class=\"list-group-item\" href=\"admin/ressourcen\">Ressourcen</a>\n" +
+    "                <a class=\"list-group-item\" href=\"admin/sammelitems\">Sammelitems</a>\n" +
+    "                <!--<a class=\"list-group-item\" href=\"admin/segmente\">Segmente</a>-->\n" +
     "            </div>\n" +
     "        </div>\n" +
     "    </div>\n" +
@@ -3793,7 +3793,7 @@ angular.module('app').run(['$templateCache', function($templateCache) {
     "    <p class=\"content-body\">Hallo ihr Lieben!\n" +
     "\n" +
     "Wir sind froh euch heute endlich die neue Seite präsentieren zu können!\n" +
-    "Als lockeren Start haben wir für euch die <a href=\"/faq\">FAQ</a> zusammengestellt mit vielen Fragen, die euch hoffentlich eine Hilfe sind - die FAQ sind natürlich noch nicht komplett und werden mit der Zeit weiter ausgebaut.\n" +
+    "Als lockeren Start haben wir für euch die <a href=\"faq\">FAQ</a> zusammengestellt mit vielen Fragen, die euch hoffentlich eine Hilfe sind - die FAQ sind natürlich noch nicht komplett und werden mit der Zeit weiter ausgebaut.\n" +
     "Selbstverständlich haben wir schon jede Menge weiterer Daten in der Rückhand und wir werden unser bestes Geben euch nach und nach all diese Daten aufbereitet hier zur Verfügung zu stellen.\n" +
     "Solltet ihr Anmerkungen haben, Fehler finden oder noch Fragen haben, freuen wir uns über jegliches Feedback!\n" +
     "Besucht uns dazu gerne im Forum!\n" +

@@ -2,78 +2,93 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <!--
+      Dynamic <base>: makes the app work both at a GitHub Pages *project* subpath
+      (e.g. https://<user>.github.io/xenobladex-static/) and at a domain *root*
+      (e.g. https://xenobladex.org/) with no code changes. All other URLs in the app
+      are relative and resolve against this base.
+    -->
+    <script>
+        (function () {
+            var base = '/';
+            if (location.hostname.indexOf('github.io') !== -1) {
+                var seg = location.pathname.split('/').filter(Boolean)[0];
+                if (seg) { base = '/' + seg + '/'; }
+            }
+            document.write('<base href="' + base + '">');
+        })();
+    </script>
     <title>XenobladeX.org - Infos & Guides</title>
-    <link rel="icon" type="image/png" href="/favicon-32x32.png?v=XBBeY5Rbzx" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-194x194.png?v=XBBeY5Rbzx" sizes="194x194">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png?v=XBBeY5Rbzx" sizes="96x96">
-    <link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=XBBeY5Rbzx" sizes="192x192">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png?v=XBBeY5Rbzx" sizes="16x16">
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=XBBeY5Rbzx">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=XBBeY5Rbzx">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=XBBeY5Rbzx">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=XBBeY5Rbzx">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=XBBeY5Rbzx">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=XBBeY5Rbzx">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=XBBeY5Rbzx">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=XBBeY5Rbzx">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=XBBeY5Rbzx">
-    <link rel="manifest" href="/manifest.json?v=XBBeY5Rbzx">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=XBBeY5Rbzx" color="#5bbad5">
-    <link rel="shortcut icon" href="/favicon.ico?v=XBBeY5Rbzx">
+    <link rel="icon" type="image/png" href="favicon-32x32.png?v=XBBeY5Rbzx" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-194x194.png?v=XBBeY5Rbzx" sizes="194x194">
+    <link rel="icon" type="image/png" href="favicon-96x96.png?v=XBBeY5Rbzx" sizes="96x96">
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png?v=XBBeY5Rbzx" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicon-16x16.png?v=XBBeY5Rbzx" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png?v=XBBeY5Rbzx">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png?v=XBBeY5Rbzx">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png?v=XBBeY5Rbzx">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png?v=XBBeY5Rbzx">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png?v=XBBeY5Rbzx">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png?v=XBBeY5Rbzx">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png?v=XBBeY5Rbzx">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png?v=XBBeY5Rbzx">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png?v=XBBeY5Rbzx">
+    <link rel="manifest" href="manifest.json?v=XBBeY5Rbzx">
+    <link rel="mask-icon" href="safari-pinned-tab.svg?v=XBBeY5Rbzx" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon.ico?v=XBBeY5Rbzx">
     <meta name="msapplication-TileColor" content="#49d7d5">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png?v=XBBeY5Rbzx">
+    <meta name="msapplication-TileImage" content="mstile-144x144.png?v=XBBeY5Rbzx">
     <meta name="theme-color" content="#373a3c">
     <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link type="text/css" rel="stylesheet" href="/libraries/leaflet/leaflet.css">
-    <link type="text/css" rel="stylesheet" href="/libraries/leaflet-draw/leaflet.draw.css">
-    <link type="text/css" rel="stylesheet" href="/libraries/font-awesome/css/font-awesome.min.css">
-    <link type="text/css" rel="stylesheet" href="/libraries/bootstrap/css/bootstrap.min.css">
-    <link type="text/css" rel="stylesheet" href="/libraries/bootstrap/css/bootstrap-theme.min.css">
-    <link type="text/css" rel="stylesheet" href="/libraries/tether/css/tether.min.css">
-    <link type="text/css" rel="stylesheet" href="/libraries/tether/css/tether-theme-basic.min.css">
-    <link type="text/css" rel="stylesheet" href="/libraries/tether/css/tether-theme-arrows.min.css">
-    <link type="text/css" rel="stylesheet" href="/libraries/tether/css/tether-theme-arrows-dark.min.css">
-    <link type="text/css" rel="stylesheet" href="/libraries/xeditable/xeditable.css">
-    <link type="text/css" rel="stylesheet" href="/libraries/jquery-ui/jquery-ui.min.css">
-    <link type="text/css" rel='stylesheet' href='/libraries/textangular/textAngular.css'>
-    <link type="text/css" rel='stylesheet' href='/libraries/angular-bootstrap-colorpicker/colorpicker.min.css'>
-    <link type="text/css" rel="stylesheet" href="/css/main.css">
+    <link type="text/css" rel="stylesheet" href="libraries/leaflet/leaflet.css">
+    <link type="text/css" rel="stylesheet" href="libraries/leaflet-draw/leaflet.draw.css">
+    <link type="text/css" rel="stylesheet" href="libraries/font-awesome/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="libraries/bootstrap/css/bootstrap-theme.min.css">
+    <link type="text/css" rel="stylesheet" href="libraries/tether/css/tether.min.css">
+    <link type="text/css" rel="stylesheet" href="libraries/tether/css/tether-theme-basic.min.css">
+    <link type="text/css" rel="stylesheet" href="libraries/tether/css/tether-theme-arrows.min.css">
+    <link type="text/css" rel="stylesheet" href="libraries/tether/css/tether-theme-arrows-dark.min.css">
+    <link type="text/css" rel="stylesheet" href="libraries/xeditable/xeditable.css">
+    <link type="text/css" rel="stylesheet" href="libraries/jquery-ui/jquery-ui.min.css">
+    <link type="text/css" rel='stylesheet' href='libraries/textangular/textAngular.css'>
+    <link type="text/css" rel='stylesheet' href='libraries/angular-bootstrap-colorpicker/colorpicker.min.css'>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="fragment" content="!" />
     <meta property="og:url" content="https://www.xenobladex.org">
     <meta property="og:image" content="https://www.xenobladex.org/images/og_image.jpg">
     <meta property="og:title" content="XenobladeX.org - Infos & Guides">
-    <base href="/">
 </head>
 <body ng-app="app">
 <div ng-if="frontend"  ng-include src="'views/_header.html'"></div>
 <main ng-class="{'main-content':frontend}" role="main">
     <div class="main-view" ng-view></div>
-    <img class="body-bg" src="/images/bg_xenobladex.jpg" />
-    <img class="logo-game" src="/images/logo_game.png" />
+    <img class="body-bg" src="images/bg_xenobladex.jpg" />
+    <img class="logo-game" src="images/logo_game.png" />
 </main>
-<script type="text/javascript" src="/bundles/fosjsrouting/js/router.js"></script>
-<script type="text/javascript" src="/js/routing.js"></script>
-<script type="text/javascript" src="/libraries/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="/libraries/jquery-ui/jquery-ui.min.js"></script>
-<script type="text/javascript" src="/libraries/leaflet/leaflet.js"></script>
-<script type="text/javascript" src="/libraries/leaflet-draw/leaflet.draw.js"></script>
-<script type="text/javascript" src="/libraries/angular.min.js"></script>
-<script type="text/javascript" src='/libraries/angular-bootstrap-colorpicker/bootstrap-colorpicker-module.min.js'></script>
-<script type="text/javascript" src='/libraries/textangular/textAngular-rangy.min.js'></script>
-<script type="text/javascript" src='/libraries/textangular/textAngular-sanitize.min.js'></script>
-<script type="text/javascript" src='/libraries/textangular/textAngular.min.js'></script>
-<script type="text/javascript" src="/libraries/angular-route.min.js"></script>
-<script type="text/javascript" src="/libraries/angular-cookies.min.js"></script>
-<script type="text/javascript" src="/libraries/tether/js/tether.min.js"></script>
-<script type="text/javascript" src="/libraries/ui-bootstrap-0.13.3.min.js"></script>
-<script type="text/javascript" src="/libraries/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/libraries/xeditable/xeditable.min.js"></script>
-<script type="text/javascript" src="/libraries/naturalSortVersionCaching.min.js"></script>
-<script type="text/javascript" src="/libraries/alphanum.js"></script>
-<script type="text/javascript" src="/js/main.min.js"></script>
-<script type="text/javascript" src="/js/templates.js"></script>
-<script type="text/javascript" src="/js/static-shim.js"></script>
+<script type="text/javascript" src="bundles/fosjsrouting/js/router.js"></script>
+<script type="text/javascript" src="js/routing.js"></script>
+<script type="text/javascript" src="libraries/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="libraries/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="libraries/leaflet/leaflet.js"></script>
+<script type="text/javascript" src="libraries/leaflet-draw/leaflet.draw.js"></script>
+<script type="text/javascript" src="libraries/angular.min.js"></script>
+<script type="text/javascript" src='libraries/angular-bootstrap-colorpicker/bootstrap-colorpicker-module.min.js'></script>
+<script type="text/javascript" src='libraries/textangular/textAngular-rangy.min.js'></script>
+<script type="text/javascript" src='libraries/textangular/textAngular-sanitize.min.js'></script>
+<script type="text/javascript" src='libraries/textangular/textAngular.min.js'></script>
+<script type="text/javascript" src="libraries/angular-route.min.js"></script>
+<script type="text/javascript" src="libraries/angular-cookies.min.js"></script>
+<script type="text/javascript" src="libraries/tether/js/tether.min.js"></script>
+<script type="text/javascript" src="libraries/ui-bootstrap-0.13.3.min.js"></script>
+<script type="text/javascript" src="libraries/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="libraries/xeditable/xeditable.min.js"></script>
+<script type="text/javascript" src="libraries/naturalSortVersionCaching.min.js"></script>
+<script type="text/javascript" src="libraries/alphanum.js"></script>
+<script type="text/javascript" src="js/main.min.js"></script>
+<script type="text/javascript" src="js/templates.js"></script>
+<script type="text/javascript" src="js/static-shim.js"></script>
 </body>
 </html>

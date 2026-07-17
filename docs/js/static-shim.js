@@ -27,7 +27,7 @@
                             if (/^attachment\/\d+$/.test(rest)) { return config; }
                             var method = (config.method || 'GET').toUpperCase();
                             if (method === 'GET') {
-                                config.url = '/data/' + rest.replace(/\//g, '_') + '.json';
+                                config.url = 'data/' + rest.replace(/\//g, '_') + '.json';
                             }
                         }
                     } catch (e) { /* ignore */ }

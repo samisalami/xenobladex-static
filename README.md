@@ -61,16 +61,24 @@ python3 tools/generate.py       # rewrites docs/data/*.json
 
 ## Deploy
 
-The web root is [`docs/`](docs). Any of these work:
+The web root is [`docs/`](docs). It is **path-agnostic**: `index.html` sets `<base href>`
+at runtime — on a GitHub Pages *project* site it uses the first path segment
+(`/<repo>/`), and on a root domain it uses `/`. Every other URL in the app is relative,
+so the same files work in both places with no changes.
 
-* **GitHub Pages** — repo *Settings → Pages → Deploy from branch → `main` / `/docs`*.
-  Because the app uses absolute paths and `<base href="/">`, use a **custom domain**
-  (e.g. `xenobladex.org`) so the site is served at the domain root. `docs/404.html`
+* **GitHub Pages (project site)** — *Settings → Pages → Deploy from a branch →
+  `main` / `/docs`*. Served at `https://<user>.github.io/<repo>/`. `docs/404.html`
   (a copy of `index.html`) provides the SPA deep-link fallback; `.nojekyll` is included.
+* **Custom domain / root** (e.g. `xenobladex.org`) — same repo, add the domain in the
+  Pages settings (and a `docs/CNAME` file). The dynamic base resolves to `/` automatically.
 * **Netlify / Cloudflare Pages** — publish directory `docs`; `docs/_redirects` provides
   the SPA fallback.
 * **nginx / Apache** — point the web root at `docs/` and add an SPA fallback
   (`try_files $uri /index.html;`).
+
+> The original `main.min.js` / `templates.js` were lightly patched to use relative URLs
+> (nav links, `attachmentsUrl`, and the leaflet tile URL, which originally pointed at the
+> live domain). See `tools/relativize` notes in the commit history.
 
 External calls in the original page were removed/kept minimal: Google Analytics was
 removed; the two Google Fonts stylesheets are kept for visual fidelity.
